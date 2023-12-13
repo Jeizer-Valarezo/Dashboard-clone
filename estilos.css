@@ -1,10 +1,10 @@
 body{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50px 1fr 1fr;
-    grid-template-areas:    "header header header"
-                            "navbar contenido contenido"
-                            "navbar contenido contenido";
+    grid-template-areas:    "header header header header"
+                            "navbar contenido contenido ajustes"
+                            "navbar contenido contenido ajustes";
     
     
 }
@@ -19,4 +19,8 @@ body{
 .contenido{
     grid-area: contenido;
     border: 5px solid green;
+}
+.ajustes{
+    grid-area: ajustes;
+    border: 5px solid blue;
 }
