@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-areas:    "header header header"
+                            "navbar contenido contenido"
+                            "navbar contenido contenido";
+    
+    
+}
+.header{
+    grid-area: header;
+    border: 5px solid aqua;
+}
+.navbar{
+    grid-area: navbar;
+    border: 5px solid red;
+}
+.contenido{
+    grid-area: contenido;
+    border: 5px solid green;
+}
