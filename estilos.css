@@ -118,8 +118,7 @@ label img{
 
 .default-button{
     padding-right: 10px;
-    display: flex;
-    flex-direction: column;  
+    flex-direction: column;   
 }
 
 .default-button img{
@@ -127,6 +126,8 @@ label img{
 }
 
 .default-button, .dark-button{
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
     border: none;
 }
@@ -136,9 +137,10 @@ label img{
 
 .Light, .Dark{
     color: #5e6e82;
+    display: flex;
 }
 
-.light{
+.light input{
     border-color: var(--green);
 }
 /* TERMINA VENTANA DE AJUSTES */
