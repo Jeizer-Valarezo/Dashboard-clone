@@ -5,8 +5,11 @@ body{
     grid-template-areas:    "header header header header"
                             "navbar contenido contenido ajustes"
                             "navbar contenido contenido ajustes";
+    background-color: var(--fondo);
     
-    
+}
+*{
+    padding: 0;
 }
 .header{
     grid-area: header;
@@ -24,6 +27,66 @@ body{
     grid-area: ajustes;
     border: 5px solid blue;
 }
+    /*NAVBAR INICIO*/
+.navbar{
+    background-color: var(--white);  
+    
+   
+}
+.nav__link{
+    color: var(--gray-dark);
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+.nav__link:hover{
+    color: var(--dark);
+}
+.nav__link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+.listN{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 16px 16px 0;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    
+}
+.listN__item{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.listN__item--click{
+    cursor: pointer;
+}
+.listN__button{
+    display: flex;
+    gap: 1em;
+    margin: 0 auto;
+}
+.arrow .listN__arrow{
+    transform: rotate(180deg);
+}
+.listN__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.listN__show{
+    width: 80%;
+    margin-left: auto;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+    /*NAVBAR FIN*/
 
 /* EMPIEZA VENTANA DE AJUSTES */
 
@@ -35,6 +98,7 @@ body{
 }
 
 :root {
+    --fondo:#edf2f9;
     --blue: #2c7be5;
     --indigo: #727cf5;
     --purple: #6b5eae;
@@ -46,8 +110,8 @@ body{
     --teal: #02a8b5;
     --cyan: #27bcfd;
     --white: #fff;
-    --gray: #748194;
-    --gray-dark: #4d5969;
+    --gray: #cfcfcf;
+    --gray-dark: #757b84;
     --primary: #2c7be5;
     --secondary: #748194;
     --success: #00d27a;
@@ -55,7 +119,7 @@ body{
     --warning: #f5803e;
     --danger: #e63757;
     --light: #f9fafd;
-    --dark: #0b1727;
+    --dark: #000000;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;

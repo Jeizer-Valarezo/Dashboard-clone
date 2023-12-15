@@ -1,64 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    
     <title>Dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="header">Header</section>
-    <section class="navbar">Navbar
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
+    <!-- NAV INICIO -->
+    <nav class="navbar">
+        <ul class="listN">
+
+            <li class="listN__item listN__item--click">
+                <div class="listN__button listN__button--click">
+                    <img src="assets/graphicspie.svg" alt="#" class="listN__img">
+                    <a href="#" class="nav__link">Home</a>
+                    <img src="assets/arrow.svg" class="listN__arrow">
+                </div>
+
+                <ul class="listN__show">
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Dashboard</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Dashboard alt</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Feed</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Landing</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="listN__item listN__item--click">
+                <div class="listN__button listN__button--click">
+                    <img src="assets/pages.svg" alt="#" class="listN__img">
+                    <a href="#" class="nav__link">Pages</a>
+                    <img src="assets/arrow.svg" class="listN__arrow">
+                </div>
+
+                <ul class="listN__show">
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Activity</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Associations</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Billing</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Customer details</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Event detail</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Event create</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Events</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Faq</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Invoice</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Invite people</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">Notifications</a>
+                    </li>
+                    <li class="listN__inside">
+                        <a href="#" class="nav__link nav__link--inside">People</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="listN__item">
+                <div class="listN__button">
+                    <img src="assets/chat.svg" alt="#" class="listN__img">
+                    <a href="#" class="nav__link">Chat</a>
+                </div>
+            </li>
         </ul>
-    </section>
+      
+    </nav>
+    <!-- NAV FIN -->
     <section class="contenido">Contenido</section>
-    <section class="ajustes">Ajustes</section>
 
-        <!-- EMPIEZA vENTANA DE AJUSTES -->
+    <!-- EMPIEZA vENTANA DE AJUSTES -->
 
-        <section class="ajustes">
-            <div class="top">
-                <div class="top-left">
-                    <h3><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="palette" class="svg-inline--fa fa-palette fa-w-16 mr-2 fs-0" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
-                        Settings</h3>
-                    <p>Set your own customized style</p>
-                </div>
-                <div class="button">
-                    <button class="close-button" onclick="cerrarPagina()">X</button>
-                </div>
-            </div>
-            <div class="rest1">
-                <h3>Color Scheme</h3>
-                <p>Choose the perfect color mode for your app.</p>
-            </div>
-            <div class="theme">
-                <button class="default-button">
-                <label class="default-label" for="default">   
-                    <img src="falcon-mode-default.66875604.jpg">
-                </label>
-                <input type="radio" class="default"> 
-                <label class="Light" for="default">Light</label>
-                </button>
-                <button class="dark-button">
-                <label class="dark-label" for="dark" >
-                    <img src="falcon-mode-dark.651bc4bd.jpg">
-                </label>   
-                <input type="radio" class="dark">
-                <label class="Dark" for="dark">Dark</label>
-                </button>
-            </div>
-        </ajustes>
+    <section class="ajustes">
+      <div class="top">
+        <div class="top-left">
+          <h3>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="palette"
+              class="svg-inline--fa fa-palette fa-w-16 mr-2 fs-0"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
+              ></path>
+            </svg>
+            Settings
+          </h3>
+          <p>Set your own customized style</p>
+        </div>
+        <div class="button">
+          <button class="close-button" onclick="cerrarPagina()">X</button>
+        </div>
+      </div>
+      <div class="rest1">
+        <h3>Color Scheme</h3>
+        <p>Choose the perfect color mode for your app.</p>
+      </div>
+      <div class="theme">
+        <button class="default-button">
+          <label class="default-label" for="default">
+            <img src="falcon-mode-default.66875604.jpg" />
+          </label>
+          <input type="radio" class="default" />
+          <label class="Light" for="default">Light</label>
+        </button>
+        <button class="dark-button">
+          <label class="dark-label" for="dark">
+            <img src="falcon-mode-dark.651bc4bd.jpg" />
+          </label>
+          <input type="radio" class="dark" />
+          <label class="Dark" for="dark">Dark</label>
+        </button>
+      </div>
+    </section>
 
-        <!-- TERMINA VENTANA DE AJUSTES -->
-</body>
+    <!-- TERMINA VENTANA DE AJUSTES -->
+  </body>
+  <script src="main.js"></script>
 </html>
