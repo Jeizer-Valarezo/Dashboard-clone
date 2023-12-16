@@ -4,92 +4,458 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
-    
+
     <title>Dashboard</title>
   </head>
   <body>
     <section class="header">Header</section>
     <!-- NAV INICIO -->
     <nav class="navbar">
-        <ul class="listN">
+      <ul class="listN">
+        <li class="listN__item listN__item--click">
+          <div class="listN__button listN__button--click">
+            <img src="assets/graphicspie.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Home</a>
+            <img src="assets/arrow.svg" class="listN__arrow" />
+          </div>
 
-            <li class="listN__item listN__item--click">
-                <div class="listN__button listN__button--click">
-                    <img src="assets/graphicspie.svg" alt="#" class="listN__img">
-                    <a href="#" class="nav__link">Home</a>
-                    <img src="assets/arrow.svg" class="listN__arrow">
-                </div>
-
-                <ul class="listN__show">
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Dashboard</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Dashboard alt</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Feed</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Landing</a>
-                    </li>
-                </ul>
+          <ul class="listN__show">
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Dashboard</a>
             </li>
-            <li class="listN__item listN__item--click">
-                <div class="listN__button listN__button--click">
-                    <img src="assets/pages.svg" alt="#" class="listN__img">
-                    <a href="#" class="nav__link">Pages</a>
-                    <img src="assets/arrow.svg" class="listN__arrow">
-                </div>
-
-                <ul class="listN__show">
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Activity</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Associations</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Billing</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Customer details</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Event detail</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Event create</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Events</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Faq</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Invoice</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Invite people</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">Notifications</a>
-                    </li>
-                    <li class="listN__inside">
-                        <a href="#" class="nav__link nav__link--inside">People</a>
-                    </li>
-                </ul>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Dashboard alt</a>
             </li>
-
-            <li class="listN__item">
-                <div class="listN__button">
-                    <img src="assets/chat.svg" alt="#" class="listN__img">
-                    <a href="#" class="nav__link">Chat</a>
-                </div>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Feed</a>
             </li>
-        </ul>
-      
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Landing</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="listN__item listN__item--click">
+          <div class="listN__button listN__button--click">
+            <img src="assets/pages.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Pages</a>
+            <img src="assets/arrow.svg" class="listN__arrow" />
+          </div>
+
+          <ul class="listN__show">
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Activity</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Associations</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Billing</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside"
+                >Customer details</a
+              >
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Event detail</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Event create</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Events</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Faq</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Invoice</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Invite people</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Notifications</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">People</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Pricing</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Pricing alt</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Profile</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Settings</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Starter</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Errors</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="listN__item">
+          <div class="listN__button">
+            <img src="assets/chat.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Chat</a>
+          </div>
+        </li>
+
+        <li class="listN__item">
+          <div class="listN__button">
+            <img src="assets/kanban.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Kanban</a>
+          </div>
+        </li>
+
+        <li class="listN__item">
+          <div class="listN__button">
+            <img src="assets/calendar.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Calendar</a>
+          </div>
+        </li>
+
+        <li class="listN__item listN__item--click">
+          <div class="listN__button listN__button--click">
+            <img src="assets/email.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Email</a>
+            <img src="assets/arrow.svg" class="listN__arrow" />
+          </div>
+
+          <ul class="listN__show">
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Inbox</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Email detail</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Compose</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="listN__item listN__item--click">
+          <div class="listN__button listN__button--click">
+            <img src="assets/authentication.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Authentication</a>
+            <img src="assets/arrow.svg" class="listN__arrow" />
+          </div>
+
+          <ul class="listN__show">
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Basic</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Card</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Split</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Wizard</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="listN__item listN__item--click">
+          <div class="listN__button listN__button--click">
+            <img src="assets/commerce.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">E commerce</a>
+            <img src="assets/arrow.svg" class="listN__arrow" />
+          </div>
+
+          <ul class="listN__show">
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Product list</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Product grid</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside"
+                >Product details</a
+              >
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Orders</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Order details</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Customers</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Shopping cart</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Checkout</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside"
+                >Favourite items</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="listN__item">
+          <div class="listN__button">
+            <img src="assets/widgets.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Widgets</a>
+          </div>
+        </li>
+
+        <li class="listN__item listN__item--click">
+          <div class="listN__button listN__button--click">
+            <img src="assets/components.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Components</a>
+            <img src="assets/arrow.svg" class="listN__arrow" />
+          </div>
+
+          <ul class="listN__show">
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Alerts</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Accordions</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Autocomplete</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Avatar</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Badges</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Backgrounds</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Breadcrumb</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Buttons</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Cards</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Cookie notice</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Collapses</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Carousel</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Dropdowns</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Forms</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">List groups</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Modals</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Navs</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Navbar</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Page headers</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Paginations</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Popovers</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Progress</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Sidepanel</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Spinners</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Tabs</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Tooltips</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="listN__item listN__item--click">
+          <div class="listN__button listN__button--click">
+            <img src="assets/utilities.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Utilities</a>
+            <img src="assets/arrow.svg" class="listN__arrow" />
+          </div>
+
+          <ul class="listN__show">
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Borders</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Clearfix</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Close icon</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Colors</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Display</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Embed</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Figures</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Flex</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Grid</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Sizing</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Spacing</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Stretched link</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Typography</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Vertical align</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Visibility</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="listN__item listN__item--click">
+          <div class="listN__button listN__button--click">
+            <img src="assets/plugins.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Plugins</a>
+            <img src="assets/arrow.svg" class="listN__arrow" />
+          </div>
+
+          <ul class="listN__show">
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Bulk select</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Beautiful DnD</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Chart</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Countup</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Code Highlight</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Datetime</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Dropzone</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Emoji Mart</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Font Awesome</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Full Calendar</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Image lightbox</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Lottie</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Map</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Plyr</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Progressbar</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside"
+                >React Hook Form</a
+              >
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">BS Table2</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Select</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Slick Carousel</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Scroll Bar</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Toastify</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">Typed</a>
+            </li>
+            <li class="listN__inside">
+              <a href="#" class="nav__link nav__link--inside">WYSIWYG editor</a>
+            </li>
+          </ul>
+
+          <li class="listN__item">
+            <div class="listN__button">
+              <img src="assets/documentation.svg" alt="#" class="listN__img" />
+              <a href="#" class="nav__link">Documentation</a>
+            </div>
+          </li>
+
+          <li class="listN__item">
+            <div class="listN__button">
+              <img src="assets/changelog.svg" alt="#" class="listN__img" />
+              <a href="#" class="nav__link">ChangeLog v2.10.2</a>
+            </div>
+          </li>
+        </li>
+      </ul>
     </nav>
     <!-- NAV FIN -->
     <section class="contenido">Contenido</section>

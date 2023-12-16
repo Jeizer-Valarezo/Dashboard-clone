@@ -29,7 +29,8 @@ body{
 }
     /*NAVBAR INICIO*/
 .navbar{
-    background-color: var(--white);  
+    background-color: var(--white); 
+    overflow: -moz-hidden-unscrollable; 
     
    
 }
