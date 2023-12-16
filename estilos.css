@@ -1,3 +1,34 @@
+:root {
+    --fondo:#edf2f9;
+    --blue: #2c7be5;
+    --indigo: #727cf5;
+    --purple: #6b5eae;
+    --pink: #ff679b;
+    --red: #e63757;
+    --orange: #fd7e14;
+    --yellow: #f5803e;
+    --green: #00d27a;
+    --teal: #02a8b5;
+    --cyan: #27bcfd;
+    --white: #fff;
+    --gray: #cfcfcf;
+    --gray-dark: #757b84;
+    --primary: #2c7be5;
+    --secondary: #748194;
+    --success: #00d27a;
+    --info: #27bcfd;
+    --warning: #f5803e;
+    --danger: #e63757;
+    --light: #f9fafd;
+    --dark: #000000;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1540px;
+}
+
 body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -98,36 +129,6 @@ body{
     float: right;
 }
 
-:root {
-    --fondo:#edf2f9;
-    --blue: #2c7be5;
-    --indigo: #727cf5;
-    --purple: #6b5eae;
-    --pink: #ff679b;
-    --red: #e63757;
-    --orange: #fd7e14;
-    --yellow: #f5803e;
-    --green: #00d27a;
-    --teal: #02a8b5;
-    --cyan: #27bcfd;
-    --white: #fff;
-    --gray: #cfcfcf;
-    --gray-dark: #757b84;
-    --primary: #2c7be5;
-    --secondary: #748194;
-    --success: #00d27a;
-    --info: #27bcfd;
-    --warning: #f5803e;
-    --danger: #e63757;
-    --light: #f9fafd;
-    --dark: #000000;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --breakpoint-xxl: 1540px;
-}
 
 svg{
     width: 1rem;
