@@ -61,7 +61,7 @@ body{
     /*NAVBAR INICIO*/
 .navbar{
     background-color: var(--white); 
-    overflow: -moz-hidden-unscrollable; 
+    
     
    
 }
@@ -81,7 +81,7 @@ body{
 
 .listN{
     width: 100%;
-    height: 100vh;
+    height: auto;
     border-radius: 0 16px 16px 0;
     display: flex;
     justify-content: baseline;
