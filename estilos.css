@@ -81,17 +81,19 @@ body{
 
 .listN{
     width: 100%;
+    max-height: 100vh;
     height: auto;
     border-radius: 0 16px 16px 0;
     display: flex;
     justify-content: baseline;
     flex-direction: column;
+    overflow: auto;
     
 }
 .listN__item{
     width: 100%;
     list-style: none;
-    overflow: hidden;
+    
 }
 
 .listN__item--click{
@@ -116,6 +118,7 @@ body{
     list-style: none;
     transition: height .4s;
     height: 0;
+    overflow: hidden;
 }
 
     /*NAVBAR FIN*/
