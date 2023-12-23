@@ -8,9 +8,33 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <section class="header">Header</section>
+    <!-- HEADER INICIO -->
+    <header class="header">
+      <nav class="navbar">
+        <input type="button" id="hamburguesita" />
+        <label for="hamburguesita" class="nav__menu--item">---</label>
+        <ul class="nav__menu">
+          <li class="nav__menu--item">
+            <a href="#" class="nav__menu--link logo">Logo</a>
+          </li>
+          <li class="nav__menu--item">
+            <input type="text" class="nav__menu--link" />
+          </li>
+          <li class="nav__menu--item">
+            <a href="#" class="nav__menu--link">configuraciones</a>
+          </li>
+          <li class="nav__menu--item">
+            <a href="#" class="nav__menu--link">carrito</a>
+          </li>
+          <li class="nav__menu--item">
+            <a href="#" class="nav__menu--link">perfil</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HEADER FIN -->
     <!-- NAV INICIO -->
-    <nav class="navbar">
+    <nav class="sidebar">
       <ul class="listN">
         <li class="listN__item listN__item--click">
           <div class="listN__button listN__button--click">
@@ -440,20 +464,20 @@
               <a href="#" class="nav__link nav__link--inside">WYSIWYG editor</a>
             </li>
           </ul>
+        </li>
 
-          <li class="listN__item">
-            <div class="listN__button">
-              <img src="assets/documentation.svg" alt="#" class="listN__img" />
-              <a href="#" class="nav__link">Documentation</a>
-            </div>
-          </li>
+        <li class="listN__item">
+          <div class="listN__button">
+            <img src="assets/documentation.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">Documentation</a>
+          </div>
+        </li>
 
-          <li class="listN__item">
-            <div class="listN__button">
-              <img src="assets/changelog.svg" alt="#" class="listN__img" />
-              <a href="#" class="nav__link">ChangeLog v2.10.2</a>
-            </div>
-          </li>
+        <li class="listN__item">
+          <div class="listN__button">
+            <img src="assets/changelog.svg" alt="#" class="listN__img" />
+            <a href="#" class="nav__link">ChangeLog v2.10.2</a>
+          </div>
         </li>
       </ul>
     </nav>

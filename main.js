@@ -1,3 +1,20 @@
+/* HEADER FIN */
+const boton = document.querySelector('#hamburguesita');
+
+
+const sidebar = document.querySelector('.sidebar');
+
+
+boton.addEventListener('click', () => {
+  
+  if (sidebar.style.display === 'none') {
+    sidebar.style.display = 'block';
+  } else {
+    
+    sidebar.style.display = 'none';
+  }
+});
+/* HEADER FIN */
 /* NAV INICIO */
 let listElements = document.querySelectorAll('.listN__button--click');
 
