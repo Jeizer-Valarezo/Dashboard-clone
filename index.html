@@ -10,21 +10,35 @@
   <body>
     <!-- HEADER INICIO -->
     <header class="header">
-      <nav class="navbar">
+      <div class="menuHeader">
         <input type="button" id="hamburguesita" />
         <label for="hamburguesita" class="nav__menu--item">---</label>
+      </div>
+      <div class= "logo">
+        <img src="assets/falcon.920a9ff0.png" alt="falcon logo">
+        <h2 class="nombre-empresa">falcon</h2>
+        
+      </div>
+      <nav class="navbar">
+        
         <ul class="nav__menu">
           <li class="nav__menu--item">
-            <a href="#" class="nav__menu--link logo">Logo</a>
+            <input type="text" placeholder="Search" class="nav__menu--link barra__busqueda" />
+          </li>
+          <li class="nav__menu--item ">
+            <a href="#" class="nav__menu--link">
+              <img src="assets/gear.svg" alt="" class="boton__ajustes">
+            </a>
           </li>
           <li class="nav__menu--item">
-            <input type="text" class="nav__menu--link" />
+            <a href="#" class="nav__menu--link">
+              <img src="assets/carrito.svg" alt="">
+            </a>
           </li>
           <li class="nav__menu--item">
-            <a href="#" class="nav__menu--link">configuraciones</a>
-          </li>
-          <li class="nav__menu--item">
-            <a href="#" class="nav__menu--link">carrito</a>
+            <a href="#" class="nav__menu--link">
+              <img src="assets/bell.svg" alt="">
+            </a>
           </li>
           <li class="nav__menu--item">
             <a href="#" class="nav__menu--link">perfil</a>

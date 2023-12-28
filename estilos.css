@@ -46,7 +46,7 @@ body{
 }
 
 .header{
-    top: 0;
+    
     border: 5px solid aqua;
 }
 .sidebar{
@@ -64,15 +64,23 @@ body{
 }
 /* HEADER INICIO */
 .header{
+    top: 0;
     width: 100%;
     position: fixed;
     height: 80px;
     background-color: var(--white);
+    display: flex;
+    align-items:center;
+    
 }
 .navbar{
     display: flex;
     justify-content: space-between;
-    
+}
+.nombre-empresa{
+    font-size: 40px;
+    font-weight: bolder;
+    color:rgb(15, 83, 255);
 }
 .nav__menu--link{
     text-decoration: none;
@@ -86,8 +94,27 @@ body{
 .nav__menu--item{
     font-size:18px;
     margin: 0 10px;
-    line-height: 80px;
+    float: right;
 }
+.logo{
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+    
+}
+.logo img {
+    height: 40px;
+}
+.barra__busqueda{
+    height: 20px;
+    border-radius: 2cm;
+}
+.boton__ajustes{
+    animation: rotate 5s linear infinite;
+    
+}
+
+
 #hamburguesita{
     display: none;
 }
@@ -249,6 +276,22 @@ label img{
     border-color: var(--green);
 }
 /* TERMINA VENTANA DE AJUSTES */
+
+/* ANIMACIONES INICIO */
+/* Animación de rotación */
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Animación de onda */
+ 
+/* ANIMACIONES FIN  */
+
 /* Responsive Inicio */
 @media (max-width:1200px){
     body{
@@ -262,6 +305,8 @@ label img{
         width: 100%;
         display: none;
     }
-    
+    .barra__busqueda{
+        display: none;
+    }
 }
 /* Responsive Fin */
