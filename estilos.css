@@ -22,6 +22,7 @@ body{
 }
 .ajustes{
     grid-area: ajustes;
+    border: 5px solid blue;
 }
 
 /* EMPIEZA VENTANA DE AJUSTES */
@@ -31,10 +32,10 @@ body{
     font-size: 1rem;
     width: 350px;
     float: right;
-    margin-right: 0;
 }
 
 :root {
+    --fondo:#edf2f9;
     --blue: #2c7be5;
     --indigo: #727cf5;
     --purple: #6b5eae;
@@ -46,8 +47,8 @@ body{
     --teal: #02a8b5;
     --cyan: #27bcfd;
     --white: #fff;
-    --gray: #748194;
-    --gray-dark: #4d5969;
+    --gray: #cfcfcf;
+    --gray-dark: #757b84;
     --primary: #2c7be5;
     --secondary: #748194;
     --success: #00d27a;
@@ -55,7 +56,7 @@ body{
     --warning: #f5803e;
     --danger: #e63757;
     --light: #f9fafd;
-    --dark: #0b1727;
+    --dark: #000000;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -63,6 +64,146 @@ body{
     --breakpoint-xl: 1200px;
     --breakpoint-xxl: 1540px;
 }
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    padding-top:80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:    
+                            "sidebar contenido contenido"
+                            "sidebar contenido contenido";
+    background-color: var(--fondo);
+    
+}
+
+.header{
+    top: 0;
+    border: 5px solid aqua;
+}
+.sidebar{
+    grid-area: sidebar;
+    border: 5px solid red;
+}
+.contenido{
+    grid-area: contenido;
+    border: 5px solid green;
+}
+.ajustes{
+    grid-area: ajustes;
+    border: 5px solid blue;
+    display: none;
+}
+/* HEADER INICIO */
+.header{
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    background-color: var(--white);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav__menu--link{
+    text-decoration: none;
+    color: red;
+}
+.nav__menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav__menu--item{
+    font-size:18px;
+    margin: 0 10px;
+    line-height: 80px;
+}
+#hamburguesita{
+    display: none;
+}
+
+/* HEADER FIN */
+
+    /*SIDEBAR INICIO*/
+.sidebar{
+    background-color: var(--white); 
+    
+    
+   
+}
+.nav__link{
+    color: var(--gray-dark);
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+.nav__link:hover{
+    color: var(--dark);
+}
+.nav__link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+.listN{
+    width: 100%;
+    max-height: calc(100vh - 80px);
+    height: auto;
+    border-radius: 0 16px 16px 0;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    overflow: scroll;
+    
+}
+.listN__item{
+    width: 100%;
+    list-style: none;
+    
+}
+
+.listN__item--click{
+    cursor: pointer;
+}
+.listN__button{
+    display: flex;
+    gap: 1em;
+    margin: 0 auto;
+}
+.arrow .listN__arrow{
+    transform: rotate(180deg);
+}
+.listN__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.listN__show{
+    width: 80%;
+    margin-left: auto;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+    overflow: hidden;
+}
+
+    /*SIDEBAR FIN*/
+
+/* EMPIEZA VENTANA DE AJUSTES */
+
+.ajustes{
+    font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    width: 350px;
+    float: right;
+}
+
 
 /* Primer DIV */
 
@@ -414,3 +555,19 @@ label img{
 
 
 /* TERMINA VENTANA DE AJUSTES */
+/* Responsive Inicio */
+@media (max-width:1200px){
+    body{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 50px 1fr;
+        grid-template-areas:    "contenido contenido"
+                                "contenido contenido";
+    }
+    .sidebar{
+        position: fixed;
+        width: 100%;
+        display: none;
+    }
+    
+}
+/* Responsive Fin */
