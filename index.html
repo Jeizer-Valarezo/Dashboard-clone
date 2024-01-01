@@ -7,6 +7,7 @@
 
     <title>Dashboard</title>
   </head>
+  
   <body>
     <!-- HEADER INICIO -->
     <header class="header">
@@ -14,30 +15,32 @@
         <input type="button" id="hamburguesita" />
         <label for="hamburguesita" class="nav__menu--item">---</label>
       </div>
-      <div class= "logo">
-        <img src="assets/falcon.920a9ff0.png" alt="falcon logo">
+      <div class="logo">
+        <img src="assets/falcon.920a9ff0.png" alt="falcon logo" />
         <h2 class="nombre-empresa">falcon</h2>
-        
       </div>
       <nav class="navbar">
-        
         <ul class="nav__menu">
           <li class="nav__menu--item">
-            <input type="text" placeholder="Search" class="nav__menu--link barra__busqueda" />
+            <input
+              type="text"
+              placeholder="Search"
+              class="nav__menu--link barra__busqueda"
+            />
           </li>
-          <li class="nav__menu--item ">
+          <li class="nav__menu--item">
             <a href="#" class="nav__menu--link">
-              <img src="assets/gear.svg" alt="" class="boton__ajustes">
+              <img src="assets/gear.svg" alt="" class="boton__ajustes boton__ajustes-animation" />
             </a>
           </li>
           <li class="nav__menu--item">
             <a href="#" class="nav__menu--link">
-              <img src="assets/carrito.svg" alt="">
+              <img src="assets/carrito.svg" alt="" />
             </a>
           </li>
           <li class="nav__menu--item">
             <a href="#" class="nav__menu--link">
-              <img src="assets/bell.svg" alt="">
+              <img src="assets/bell.svg" alt="" />
             </a>
           </li>
           <li class="nav__menu--item">
@@ -497,214 +500,248 @@
     </nav>
     <!-- NAV FIN -->
     <section class="contenido">Contenido</section>
-    <!-- <section class="ajustes">Ajustes</section> -->
+    
 
-        <!-- EMPIEZA VENTANA DE AJUSTES -->
-
-        <section class="ajustes">
-            <div class="top">
-                <div class="top-left">
-                    <div class="titulo">
-                        <svg class="svgt" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="palette" class="svg-inline--fa fa-palette fa-w-16 mr-2 fs-0" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
-                        <h3 class="hrt">Settings</h3>
-                    </div>
-                    <p class="pt">Set your own customized style</p>
-                </div>
-                <div class="button">
-                    <button class="close-button" onclick="cerrarPagina()">X</button>
-                </div>
+    <!-- EMPIEZA VENTANA DE AJUSTES -->
+    <section class="capa__ajustes">
+      <section class="ajustes">
+        <div class="top">
+          <div class="top-left">
+            <div class="titulo">
+              <svg
+                class="svgt"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="palette"
+                class="svg-inline--fa fa-palette fa-w-16 mr-2 fs-0"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
+                ></path>
+              </svg>
+              <h3 class="hrt">Settings</h3>
             </div>
-            <div class="rest1">
-                <h4 class="h4t">Color Scheme</h4>
-                <p class="pt">Choose the perfect color mode for your app.</p>
+            <p class="pt">Set your own customized style</p>
+          </div>
+          <div class="button">
+            <button class="close-button" onclick="cerrarPagina()">X</button>
+          </div>
+        </div>
+        <div class="rest1">
+          <h4 class="h4t">Color Scheme</h4>
+          <p class="pt">Choose the perfect color mode for your app.</p>
+        </div>
+        <div class="theme">
+          <button class="default-button">
+            <div class="default-pic">
+              <label class="default-label" for="default">
+                <img src="falcon-mode-default.66875604.jpg" />
+              </label>
             </div>
-            <div class="theme">
-                <button class="default-button">
-                    <div class="default-pic">
-                <label class="default-label" for="default">   
-                    <img src="falcon-mode-default.66875604.jpg">
-                </label>
-                    </div>
-                <div class="input-label-light">
-                    <input type="radio" class="default" name="radio"> 
-                    <label class="Light" for="default">Light</label>
-                </div>
-                </button>
-                <button class="dark-button">
-                    <div class="dark-pic">
-                <label class="dark-label" for="dark" >
-                    <img src="falcon-mode-dark.651bc4bd.jpg">
-                </label>   
-                </div>
-                <div class="input-label-dark">
-                    <input type="radio" class="dark" name="radio">
-                    <label class="Dark" for="dark">Dark</label>
-                </div>
-                </button>
+            <div class="input-label-light">
+              <input type="radio" class="default" name="radio" />
+              <label class="Light" for="default">Light</label>
             </div>
-            <hr class="uno-dos">
-
-            <!-- Segundo DIV -->
-
-            <div class="second">
-                <div class="rtl-mode">
-                    <div class="arrow-left">
-                        <img class="arrow-left-img" src="left-arrow-from-left.764b929a.svg" width="20">
-                    </div>
-                    <div class="rtl-title">
-                        <h4 class="h4t">RTL Mode</h4>           
-                        <p class="pt">Switch your language direction</p>
-                    </div>
-                </div>
-                <div class="rtl-checkbox">
-                    <label class="toggle-switch">
-                        <input type="checkbox" class="input-none">
-                        <span class="slider"></span>
-                      </label>
-                </div>
+          </button>
+          <button class="dark-button">
+            <div class="dark-pic">
+              <label class="dark-label" for="dark">
+                <img src="falcon-mode-dark.651bc4bd.jpg" />
+              </label>
             </div>
-            <hr class="dos-tres">
-
-            <!-- Tercer DIV -->
-
-            <div class="third">
-                <div class="fluid-layout">
-                    <div class="arrow-both">
-                        <img class="arrow-both-img" src="arrows-h.31beeeb2.svg" width="20">
-                    </div>
-                    <div class="fluid-title">
-                        <h4 class="h4t">Fluid Layout</h4>           
-                        <p class="pt">Toggle container layout system</p>
-                    </div>
-                </div>
-                <div class="fluid-checkbox">
-                    <label class="toggle-switch">
-                        <input type="checkbox" class="input-none">
-                        <span class="slider"></span>
-                      </label>
-                </div>
+            <div class="input-label-dark">
+              <input type="radio" class="dark" name="radio" />
+              <label class="Dark" for="dark">Dark</label>
             </div>
-            <hr class="tres-cuatro">
+          </button>
+        </div>
+        <hr class="uno-dos" />
 
-            <!-- Cuarto DIV -->
+        <!-- Segundo DIV -->
 
-            <div class="fourth">
-                <div class="navigation-position">
-                    <div class="horizontal">
-                        <img class="horizontal-img" src="paragraph.109eeba1.svg" width="20">
-                    </div>
-                    <div class="navigation-title">
-                        <div class="title-top">
-                            <h4 class="h4t">Navigation Position</h4>  
-                            <div class="new-tag">
-                                <span class="tag-text">New</span> 
-                            </div>
-                        </div>  
-                        <div class="title-bottom">  
-                            <p class="pt">Select a suitable navigation system for your web application</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="horizontal-checkboxes">
-                    <div class="horizontal-checkbox-1">
-                        <input class="horizontal-check-1" type="radio" name="nav-pos">
-                        <label class="check-1" for="nav-pos-1">Vertical</label>
-                    </div>
-                    <div class="horizontal-checkbox-2">
-                        <input class="horizontal-check-2" type="radio" name="nav-pos">
-                        <label class="check-2" for="nav-pos-2">Top</label>
-                    </div>
-                    <div class="horizontal-checkbox-3">
-                        <input class="horizontal-check-3" type="radio" name="nav-pos">
-                        <label class="check-3" for="nav-pos-3">Combo</label>
-                    </div>
-                </div>
+        <div class="second">
+          <div class="rtl-mode">
+            <div class="arrow-left">
+              <img
+                class="arrow-left-img"
+                src="left-arrow-from-left.764b929a.svg"
+                width="20"
+              />
             </div>
-            <hr class="tres-cuatro">
-
-            <!-- Quinto DIV -->
-
-            <div class="fifth">
-                <div class="navbar-style">
-                    <div class="navbar-title">
-                        <h4 class="h4t">Vertical Navbar Style</h4>           
-                        <p class="pt">Switch between styles for your vertical navbar</p>
-                    </div>
-                </div>
-                <div class="nav-styles">
-                    <div class="nav1">
-                        <button class="transparent-button">
-                            <div class="transparent-pic">
-                                <label class="transparent-label" for="transparent">   
-                                <img src="download.png">
-                                </label>
-                            </div>
-                            <div class="input-label-transparent">
-                                <input type="radio" class="transparent" name="nav"> 
-                                <label class="Transparent" for="transparent">Transparent</label>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="nav2">
-                        <button class="inverted-button">
-                            <div class="inverted-pic">
-                                <label class="inverted-label" for="inverted">   
-                                <img src="download (1).png">
-                                </label>
-                            </div>
-                            <div class="input-label-inverted">
-                                <input type="radio" class="inverted" name="nav"> 
-                                <label class="Inverted" for="inverted">Inverted</label>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="nav3">
-                        <button class="card-button">
-                            <div class="card-pic">
-                                <label class="card-label" for="card">   
-                                <img src="download3.png">
-                                </label>
-                            </div>
-                            <div class="input-label-card">
-                                <input type="radio" class="card" name="nav"> 
-                                <label class="Card" for="card">Card</label>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="nav4">
-                        <button class="vibrant-button">
-                            <div class="vibrant-pic">
-                                <label class="vibrant-label" for="vibrant">   
-                                <img src="donwload4.png">
-                                </label>
-                            </div>
-                            <div class="input-label-vibrant">
-                                <input type="radio" class="vibrant" name="nav"> 
-                                <label class="Vibrant" for="vibrant">Vibrant</label>
-                            </div>
-                        </button>
-                    </div>
-                </div>
+            <div class="rtl-title">
+              <h4 class="h4t">RTL Mode</h4>
+              <p class="pt">Switch your language direction</p>
             </div>
-            <hr class="cinco-seis">
-        </ajustes>
+          </div>
+          <div class="rtl-checkbox">
+            <label class="toggle-switch">
+              <input type="checkbox" class="input-none" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <hr class="dos-tres" />
+
+        <!-- Tercer DIV -->
+
+        <div class="third">
+          <div class="fluid-layout">
+            <div class="arrow-both">
+              <img
+                class="arrow-both-img"
+                src="arrows-h.31beeeb2.svg"
+                width="20"
+              />
+            </div>
+            <div class="fluid-title">
+              <h4 class="h4t">Fluid Layout</h4>
+              <p class="pt">Toggle container layout system</p>
+            </div>
+          </div>
+          <div class="fluid-checkbox">
+            <label class="toggle-switch">
+              <input type="checkbox" class="input-none" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <hr class="tres-cuatro" />
+
+        <!-- Cuarto DIV -->
+
+        <div class="fourth">
+          <div class="navigation-position">
+            <div class="horizontal">
+              <img
+                class="horizontal-img"
+                src="paragraph.109eeba1.svg"
+                width="20"
+              />
+            </div>
+            <div class="navigation-title">
+              <div class="title-top">
+                <h4 class="h4t">Navigation Position</h4>
+                <div class="new-tag">
+                  <span class="tag-text">New</span>
+                </div>
+              </div>
+              <div class="title-bottom">
+                <p class="pt">
+                  Select a suitable navigation system for your web application
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-checkboxes">
+            <div class="horizontal-checkbox-1">
+              <input class="horizontal-check-1" type="radio" name="nav-pos" />
+              <label class="check-1" for="nav-pos-1">Vertical</label>
+            </div>
+            <div class="horizontal-checkbox-2">
+              <input class="horizontal-check-2" type="radio" name="nav-pos" />
+              <label class="check-2" for="nav-pos-2">Top</label>
+            </div>
+            <div class="horizontal-checkbox-3">
+              <input class="horizontal-check-3" type="radio" name="nav-pos" />
+              <label class="check-3" for="nav-pos-3">Combo</label>
+            </div>
+          </div>
+        </div>
+        <hr class="tres-cuatro" />
+
+        <!-- Quinto DIV -->
+
+        <div class="fifth">
+          <div class="navbar-style">
+            <div class="navbar-title">
+              <h4 class="h4t">Vertical Navbar Style</h4>
+              <p class="pt">Switch between styles for your vertical navbar</p>
+            </div>
+          </div>
+          <div class="nav-styles">
+            <div class="nav1">
+              <button class="transparent-button">
+                <div class="transparent-pic">
+                  <label class="transparent-label" for="transparent">
+                    <img src="download.png" />
+                  </label>
+                </div>
+                <div class="input-label-transparent">
+                  <input type="radio" class="transparent" name="nav" />
+                  <label class="Transparent" for="transparent">Transparent</label>
+                </div>
+              </button>
+            </div>
+            <div class="nav2">
+              <button class="inverted-button">
+                <div class="inverted-pic">
+                  <label class="inverted-label" for="inverted">
+                    <img src="download (1).png" />
+                  </label>
+                </div>
+                <div class="input-label-inverted">
+                  <input type="radio" class="inverted" name="nav" />
+                  <label class="Inverted" for="inverted">Inverted</label>
+                </div>
+              </button>
+            </div>
+            <div class="nav3">
+              <button class="card-button">
+                <div class="card-pic">
+                  <label class="card-label" for="card">
+                    <img src="download3.png" />
+                  </label>
+                </div>
+                <div class="input-label-card">
+                  <input type="radio" class="card" name="nav" />
+                  <label class="Card" for="card">Card</label>
+                </div>
+              </button>
+            </div>
+            <div class="nav4">
+              <button class="vibrant-button">
+                <div class="vibrant-pic">
+                  <label class="vibrant-label" for="vibrant">
+                    <img src="donwload4.png" />
+                  </label>
+                </div>
+                <div class="input-label-vibrant">
+                  <input type="radio" class="vibrant" name="nav" />
+                  <label class="Vibrant" for="vibrant">Vibrant</label>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="cinco-seis" />
 
         <!-- Sexto DIV -->
         <div class="imagen">
-            <img class="imagen-final" src="settings.ae4802db.png" width="120">
+          <img class="imagen-final" src="settings.ae4802db.png" width="120" />
         </div>
         <div class="last-title">
-            <h3 class="h3t-last">Like What You See?</h3>
-            <div class="last-subtitle">
-                <p class="pt-last">Get Falcon now and create beautiful dashboards with hundreds of widgets.</p>
-            </div>
-            <div class="purchase">
-                <a href="https://www.nintendo.com/us/retail-offers/">
-                    <input type="button" class="purchase-button" value="Purchase">
-                 </a>
-            </div>
+          <h3 class="h3t-last">Like What You See?</h3>
+          <div class="last-subtitle">
+            <p class="pt-last">
+              Get Falcon now and create beautiful dashboards with hundreds of
+              widgets.
+            </p>
+          </div>
+          <div class="purchase">
+            <a href="https://www.nintendo.com/us/retail-offers/">
+              <input type="button" class="purchase-button" value="Purchase" />
+            </a>
+          </div>
         </div>
+      </section>
+    </section>
 
-        <!-- TERMINA VENTANA DE AJUSTES -->
-</body>
+    <!-- TERMINA VENTANA DE AJUSTES -->
+  </body>
+  <script src="main.js"></script>
 </html>
