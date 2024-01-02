@@ -590,3 +590,135 @@ label img{
     }
 }
 /* Responsive Fin */
+
+
+
+/*contenido migue*/
+
+
+.parteMigue1{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-color: red;
+    justify-content: space-between;
+}
+
+.ContenedorPriM{
+background-color: blue;
+
+display: flex;
+
+}
+
+.ContenedorSecuM{
+    background-color: purple;
+
+display: flex;
+
+
+}
+
+.StorageM{
+    padding: 15px;
+flex: 1 25%;
+margin: 5px;
+background-color:white;
+}
+
+.StorageM h5{
+    margin-top: 0px;
+    color:#4d5969;
+}
+/*
+strong.highlightM{ 
+    font-weight: bold;
+    font-size: 100px;
+
+}
+*/
+.barraHorizM{
+    height: 5px;
+    background-color: red;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.color1M{
+    background-color: #2c7be5;
+    width: 43%;
+    height: 100%;
+  
+}
+.color2M{
+    background-color: #27bcfd;
+    width: 18%;
+    height: 100%;
+}
+.color3M{
+    background-color: #00d27a;
+    width: 28%;
+    height: 100%;
+}
+.color4M{
+    background-color: #cfcfcf;
+    width: 40%;
+    height: 100%;
+}
+.separadorColorM{
+    height: 5px;
+    background: white;
+    width: 1px;
+}
+
+.runningM{
+    flex: 1;
+    margin: 5px; 
+    background-color: gray;
+}
+
+.bestSellingM{
+    flex: 1 25%;
+    margin: 5px;
+    padding: 15px;
+    background-color:white;
+}
+
+.sharedFilesM{
+    flex: 1;
+    margin: 5px;
+    background-color: grey;
+}
+
+.circulosM{
+    display:inline-block;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 90px;
+    background-color: purple;
+    justify-content: center;
+}
+.C1{
+    background-color: #2c7be5 ;
+}
+.C2{
+    background-color: #27bcfd ;
+}
+.C3{
+    background-color: #00d27a ;
+}
+.C4{
+    background-color:#cfcfcf ;
+}
+
+
+.circulosM p{
+   white-space: nowrap;
+   margin-left: 20px;
+   font-size: 13px;
+   
+   
+}
+
