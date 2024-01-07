@@ -647,6 +647,7 @@ strong.highlightM{
     background-color: #2c7be5;
     width: 43%;
     height: 100%;
+    
   
 }
 .color2M{
@@ -843,4 +844,60 @@ flex-grow: 0.03;
     width: 57%;
     height: 100%;
     border-radius: 0.375rem;
+}
+.BarraAzulProgM2{
+    background-color: #2c7be5;
+    width: 27%;
+    height: 100%;
+    border-radius: 0.375rem;
+
+}
+.BarraGrisProgM2{  background-color: #141516;
+    width: 73%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+.BarraAzulProgM3{
+    background-color: #2c7be5;
+    width: 17%;
+    height: 100%;
+    border-radius: 0.375rem;
+
+}
+.BarraGrisProgM3{  background-color: #141516;
+    width: 83%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+.BarraAzulProgM4{
+    background-color: #2c7be5;
+    width: 8%;
+    height: 100%;
+    border-radius: 0.375rem;
+
+}
+.BarraGrisProgM4{  background-color: #141516;
+    width: 92%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+.BarraAzulProgM5{
+    background-color: #2c7be5;
+    width: 7%;
+    height: 100%;
+    border-radius: 0.375rem;
+
+}
+.BarraGrisProgM5{  background-color: #141516;
+    width: 93%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+
+.casillaProductosM .contenedorTextoProductoM span:first-child{
+    text-decoration: none;
+}
+.casillaProductosM .fotoProductosM:hover+ .contenedorTextoProductoM span:first-child,
+.casillaProductosM .contenedorTextoProductoM:hover span:first-child{
+    text-decoration: underline;
 }
