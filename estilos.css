@@ -590,8 +590,46 @@ label img{
     }
 }
 /* Responsive Fin */
+/*Secciones*/
+.card {
+   
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid #edf2f9;
+    border-radius: 0.375rem;
+    width: 40%;
+    margin: 40px;
+}
+h6{
+    outline: 1px solid #4371d0!important;
+    margin-bottom: 0!important;
+    font-size: .83333rem;
+}
+h6 svg{
+    width: 1%;
+}
+.card-header {
+    padding: 10px;
+    background-color: #f0f0f0;
+}
 
+.card-header h6 {
+    margin: 0;
+}
 
+.card-body {
+    padding: 10px;
+}
+.card-left{
+    float: left;
+}
+.card-rigth{
+    float: right;
+}
 
 /*contenido migue*/
 
