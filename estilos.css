@@ -36,23 +36,19 @@
 body{
     padding-top:80px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 300px calc(100% - 300px);
     grid-template-rows:1fr 1fr;
     grid-template-areas:    
-                            "sidebar contenido contenido"
-                            "sidebar contenido contenido";
+                            "sidebar contenido"
+                            "sidebar contenido";
     background-color: var(--fondo);
+    
+    
     
 }
 
-.header{
-    
-    border: 5px solid aqua;
-}
-.sidebar{
-    grid-area: sidebar;
-    border: 5px solid red;
-}
+
+
 .contenido{
     grid-area: contenido;
     border: 5px solid green;
@@ -71,7 +67,11 @@ body{
 }
 .navbar{
     display: flex;
+    position: absolute;
     justify-content: space-between;
+    right: 0;
+    text-align: center;
+    
 }
 .nombre-empresa{
     font-size: 40px;
@@ -84,13 +84,15 @@ body{
 }
 .nav__menu{
     display: flex;
+    align-items: center;
     margin-right: 40px;
     list-style: none;
+    
 }
 .nav__menu--item{
     font-size:18px;
     margin: 0 10px;
-    float: right;
+    
 }
 .logo{
     display: flex;
@@ -110,17 +112,34 @@ body{
     
 }
 
-
 #hamburguesita{
     display: none;
+    
 }
-
+.hamburguesita_label{
+    display: flex;
+    align-items:center;
+    overflow: visible;
+    height: 25px;
+    width: 30px;
+    padding: 10px;
+    
+    border-radius: 50%;
+    
+}
+.hamburguesita_label:hover{
+    background-color: var(--gray);
+    cursor: pointer;
+    
+    
+}
 /* HEADER FIN */
 
     /*SIDEBAR INICIO*/
 .sidebar{
+    position: fixed;
     background-color: var(--white); 
-    
+    width: 300px;
     
    
 }
@@ -179,9 +198,35 @@ body{
     height: 0;
     overflow: hidden;
 }
-
+#version_style{
+    color: var(--blue);
+    font-weight: bold;
+    background-color:#ccdef6;
+    padding-right: 0.71111em;
+    padding-left: 0.71111em;
+    border-radius: 10rem;
+    padding-bottom: 4px;
+    padding-top: 1px;
+}
+#purchase_sidebar{
+    width: 100% !important;
+    cursor: pointer;
+}
     /*SIDEBAR FIN*/
+/* Contenido INICIO */
 
+.perfil{
+    width: 35px;
+    height: 35px;
+    border: solid 1px #000000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+nav ul li a #foto__perfil{
+    width: 37px;
+    height: 35px;
+}
+/* Contenido FIN*/
 /* EMPIEZA VENTANA DE AJUSTES */
 .capa__ajustes{
     position: absolute;

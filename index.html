@@ -13,21 +13,23 @@
     <header class="header">
       <div class="menuHeader">
         <input type="button" id="hamburguesita" />
-        <label for="hamburguesita" class="nav__menu--item">---</label>
+        <label for="hamburguesita" class="nav__menu--item">
+          <img src="assets/hamburger-menu.svg" alt="#" class="hamburguesita_label">
+        </label>
       </div>
       <div class="logo">
         <img src="assets/falcon.920a9ff0.png" alt="falcon logo" />
         <h2 class="nombre-empresa">falcon</h2>
       </div>
-      <nav class="navbar">
-        <ul class="nav__menu">
-          <li class="nav__menu--item">
-            <input
+      <div class="Busqueda">
+        <input
               type="text"
               placeholder="Search"
               class="nav__menu--link barra__busqueda"
             />
-          </li>
+      </div>
+      <nav class="navbar">
+        <ul class="nav__menu">
           <li class="nav__menu--item">
             <a href="#" class="nav__menu--link">
               <img src="assets/gear.svg" alt="" class="boton__ajustes boton__ajustes-animation" />
@@ -43,8 +45,10 @@
               <img src="assets/bell.svg" alt="" />
             </a>
           </li>
-          <li class="nav__menu--item">
-            <a href="#" class="nav__menu--link">perfil</a>
+          <li class="nav__menu--item perfil">
+            <a href="#" class="nav__menu--link">
+              <img src="assets/fotoPerfil.jpg" alt="foto perfil" id="foto__perfil">
+            </a>
           </li>
         </ul>
       </nav>
@@ -493,12 +497,18 @@
         <li class="listN__item">
           <div class="listN__button">
             <img src="assets/changelog.svg" alt="#" class="listN__img" />
-            <a href="#" class="nav__link">ChangeLog v2.10.2</a>
+            <a href="#" class="nav__link">ChangeLog <span id="version_style">v2.10.2</span></a>
+          </div>
+        </li>
+
+        <li class="listN__item">
+          <div class="listN__button">
+            <input type="button" class="purchase-button" id="purchase_sidebar" value="Purchase" />
           </div>
         </li>
       </ul>
     </nav>
-    <!-- NAV FIN -->
+    <!-- Sidebar FIN -->
     <section class="contenido">Contenido</section>
     
 
