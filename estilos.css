@@ -635,3 +635,352 @@ label img{
     }
 }
 /* Responsive Fin */
+/*Secciones*/
+.card {
+   
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid #edf2f9;
+    border-radius: 0.375rem;
+    width: 40%;
+    margin: 40px;
+}
+h6{
+    outline: 1px solid #4371d0!important;
+    margin-bottom: 0!important;
+    font-size: .83333rem;
+}
+h6 svg{
+    width: 1%;
+}
+.card-header {
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.card-header h6 {
+    margin: 0;
+}
+
+.card-body {
+    padding: 10px;
+}
+.card-left{
+    float: left;
+}
+.card-rigth{
+    float: right;
+}
+
+/*contenido migue*/
+
+
+.parteMigue1{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    justify-content: space-between;
+}
+
+.ContenedorPriM{
+background-color: blue;
+
+display: flex;
+
+}
+
+.ContenedorSecuM{
+    background-color: purple;
+
+display: flex;
+
+
+}
+
+.StorageM{
+    padding: 15px;
+flex: 1 75%;
+margin: 5px;
+background-color:white;
+}
+
+.StorageM h5{
+    margin-top: 0px;
+    color:#4d5969;
+}
+/*
+strong.highlightM{ 
+    font-weight: bold;
+    font-size: 100px;
+
+}
+*/
+.barraHorizM{
+    height: 5px;
+    background-color: red;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.color1M{
+    background-color: #2c7be5;
+    width: 43%;
+    height: 100%;
+    
+  
+}
+.color2M{
+    background-color: #27bcfd;
+    width: 18%;
+    height: 100%;
+}
+.color3M{
+    background-color: #00d27a;
+    width: 28%;
+    height: 100%;
+}
+.color4M{
+    background-color: #cfcfcf;
+    width: 40%;
+    height: 100%;
+}
+.separadorColorM{
+    height: 5px;
+    background: white;
+    width: 1px;
+}
+
+.runningM{
+    flex: 1 25%;
+    margin: 5px; 
+    background-color: #edf2f9;
+}
+
+.bestSellingM{
+    flex: 1 75%;
+    margin: 5px;
+    background-color:white;
+}
+
+.sharedFilesM{
+    flex: 1 25%;
+    margin: 5px;
+    background-color: grey;
+}
+
+.circulosM{
+    display:inline-block;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 90px;
+    background-color: purple;
+    justify-content: center;
+}
+.C1{
+    background-color: #2c7be5 ;
+}
+.C2{
+    background-color: #27bcfd ;
+}
+.C3{
+    background-color: #00d27a ;
+}
+.C4{
+    background-color:#cfcfcf ;
+}
+
+
+.circulosM p{
+   white-space: nowrap;
+   margin-left: 20px;
+   font-size: 13px;
+   
+   
+}
+
+.tituloNaranjaM{
+    margin-bottom: 0.25rem;
+    color:#f5803e ;
+    margin: 10px;
+    
+}
+.textoBasicoM{
+    font-size: .83333rem;
+    color:#5E6E82;
+   
+
+}
+.textoNaranjaM{
+    margin-top: 1rem;
+    color: #f5803e;
+    font-size:1rem;
+    margin: 10px;
+    
+}
+
+
+.textoNaranjaM:hover{
+    text-decoration: underline 1px solid #f5803e;
+    cursor:pointer;
+}
+
+.cabeceraProductosM{
+    background-color:  #cfcfcf ;
+    height: 40px;
+    display:flex;
+    width: auto;
+    
+}
+.primeraParteCabeM{
+    margin-left: 10px;
+    margin-top: 5px;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.segundaParteCabeM{
+    
+    margin-top: 5px;
+    white-space: nowrap;
+    font-size: 13px;
+}
+.terceraParteCabeM{
+ 
+ margin-top: 5px;
+ margin-right: 10px;
+ white-space: nowrap;
+ font-size: 13px;
+ 
+}
+.espaciador1M{
+    flex-grow: 5;
+}
+.espaciador2M{
+    flex-grow: 1;
+}
+.espaciador3M{
+    flex-grow: 0.9;
+}
+.espaciador4M{
+flex-grow: 0.03;
+}
+.espaciador5M{
+flex-grow: 0.03;
+}
+
+.fotoProductosM{
+    width: 10%;
+    margin: 5px;
+
+}
+
+.casillaProductosM{
+    align-items: center;
+    position: relative;
+    display: flex;
+
+}
+.textoProducto1M{
+    display: flex;
+    flex-direction: row;
+    font-size: .83333rem;
+    font-weight: 600;  /*falta la fuente de tipografia*/
+    margin-left: 10px;
+
+}
+.textoProducto2M{
+    display: flex;
+    flex-direction: row;
+    color: #9da9bb;
+    margin-left: 10px;
+
+}
+
+.contenidoExtraM{
+    color:#9da9bb; 
+}
+
+.BarraHorizProgM{
+    height: 5px;
+    width: 50px;
+    
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.375rem;
+
+}
+.BarraAzulProgM{
+    background-color: #2c7be5;
+    width: 43%;
+    height: 100%;
+    border-radius: 0.375rem;
+
+}
+.BarraGrisProgM{  background-color: #141516;
+    width: 57%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+.BarraAzulProgM2{
+    background-color: #2c7be5;
+    width: 27%;
+    height: 100%;
+    border-radius: 0.375rem;
+
+}
+.BarraGrisProgM2{  background-color: #141516;
+    width: 73%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+.BarraAzulProgM3{
+    background-color: #2c7be5;
+    width: 17%;
+    height: 100%;
+    border-radius: 0.375rem;
+
+}
+.BarraGrisProgM3{  background-color: #141516;
+    width: 83%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+.BarraAzulProgM4{
+    background-color: #2c7be5;
+    width: 8%;
+    height: 100%;
+    border-radius: 0.375rem;
+
+}
+.BarraGrisProgM4{  background-color: #141516;
+    width: 92%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+.BarraAzulProgM5{
+    background-color: #2c7be5;
+    width: 7%;
+    height: 100%;
+    border-radius: 0.375rem;
+
+}
+.BarraGrisProgM5{  background-color: #141516;
+    width: 93%;
+    height: 100%;
+    border-radius: 0.375rem;
+}
+
+.casillaProductosM .contenedorTextoProductoM span:first-child{
+    text-decoration: none;
+}
+.casillaProductosM .fotoProductosM:hover+ .contenedorTextoProductoM span:first-child,
+.casillaProductosM .contenedorTextoProductoM:hover span:first-child{
+    text-decoration: underline;
+}
