@@ -375,6 +375,8 @@ label img{
 
 .default-button img, .dark-button img{
    border-radius: 0.375rem;
+   width: 140,5px;
+   height: 105.375px
 }
 
 .Light, .Dark{
