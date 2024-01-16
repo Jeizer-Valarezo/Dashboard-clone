@@ -55,4 +55,14 @@ boton__ajustes.addEventListener('click', () => {
     ajustes.style.display = 'none';
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const closeButton = document.querySelector(".close-button");
+    const capaAjustes = document.querySelector(".capa__ajustes");
+    closeButton.addEventListener("click", function() {
+      capaAjustes.style.display = "none";
+    });
+  });
+  
+  
 /* Ajustes FIN */
