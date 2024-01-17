@@ -6,6 +6,7 @@ var sidebarWidth = sidebar.offsetWidth;
 function sidebar_display(){
   if (sidebar.style.display === 'none') {
     sidebar.style.display = 'block';
+    
   } else {
     
     sidebar.style.display = 'none';

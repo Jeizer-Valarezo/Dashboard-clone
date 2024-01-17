@@ -71,6 +71,7 @@ body{
   justify-content: space-between;
   right: 0;
   text-align: center;
+  z-index: -1;
   
 }
 .nombre-empresa{
@@ -894,7 +895,7 @@ strong.highlightM{
 
 .casillaProductosM {
   align-items: center;
-  position: relative;
+  position: static;
   display: flex;
 }
 .textoProducto1M {
