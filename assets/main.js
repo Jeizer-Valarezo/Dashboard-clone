@@ -1,27 +1,16 @@
 /* HEADER FIN */
 const boton__sidebar = document.querySelector('#hamburguesita');
 const sidebar = document.querySelector('.sidebar');
-var sidebarWidth = sidebar.offsetWidth;
 
-function sidebar_display(){
+boton__sidebar.addEventListener('click', () => {
+  
   if (sidebar.style.display === 'none') {
     sidebar.style.display = 'block';
   } else {
     
     sidebar.style.display = 'none';
   }
-}
-
-boton__sidebar.addEventListener('click', () => {
-  
-    sidebar_display();
-  
-  
 });
-
-
-
-
 /* HEADER FIN */
 
 /* NAV INICIO */
@@ -55,14 +44,4 @@ boton__ajustes.addEventListener('click', () => {
     ajustes.style.display = 'none';
   }
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    const closeButton = document.querySelector(".close-button");
-    const capaAjustes = document.querySelector(".capa__ajustes");
-    closeButton.addEventListener("click", function() {
-      capaAjustes.style.display = "none";
-    });
-  });
-  
-  
 /* Ajustes FIN */

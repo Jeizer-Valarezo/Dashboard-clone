@@ -13,21 +13,23 @@
     <header class="header">
       <div class="menuHeader">
         <input type="button" id="hamburguesita" />
-        <label for="hamburguesita" class="nav__menu--item">---</label>
+        <label for="hamburguesita" class="nav__menu--item">
+          <img src="assets/hamburger-menu.svg" alt="#" class="hamburguesita_label">
+        </label>
       </div>
       <div class="logo">
         <img src="assets/falcon.920a9ff0.png" alt="falcon logo" />
         <h2 class="nombre-empresa">falcon</h2>
       </div>
-      <nav class="navbar">
-        <ul class="nav__menu">
-          <li class="nav__menu--item">
-            <input
+      <div class="Busqueda">
+        <input
               type="text"
               placeholder="Search"
               class="nav__menu--link barra__busqueda"
             />
-          </li>
+      </div>
+      <nav class="navbar">
+        <ul class="nav__menu">
           <li class="nav__menu--item">
             <a href="#" class="nav__menu--link">
               <img src="assets/gear.svg" alt="" class="boton__ajustes boton__ajustes-animation" />
@@ -43,8 +45,10 @@
               <img src="assets/bell.svg" alt="" />
             </a>
           </li>
-          <li class="nav__menu--item">
-            <a href="#" class="nav__menu--link">perfil</a>
+          <li class="nav__menu--item perfil">
+            <a href="#" class="nav__menu--link">
+              <img src="assets/fotoPerfil.jpg" alt="foto perfil" id="foto__perfil">
+            </a>
           </li>
         </ul>
       </nav>
@@ -493,12 +497,18 @@
         <li class="listN__item">
           <div class="listN__button">
             <img src="assets/changelog.svg" alt="#" class="listN__img" />
-            <a href="#" class="nav__link">ChangeLog v2.10.2</a>
+            <a href="#" class="nav__link">ChangeLog <span id="version_style">v2.10.2</span></a>
+          </div>
+        </li>
+
+        <li class="listN__item">
+          <div class="listN__button">
+            <input type="button" class="purchase-button" id="purchase_sidebar" value="Purchase" />
           </div>
         </li>
       </ul>
     </nav>
-    <!-- NAV FIN -->
+    <!-- Sidebar FIN -->
     <section class="contenido">
        <div class="columnas">
       <div class="card">
@@ -746,9 +756,10 @@
             <p class="pt">Set your own customized style</p>
           </div>
           <div class="button">
-            <button class="close-button" onclick="cerrarPagina()">X</button>
+            <button class="close-button">X</button>
           </div>
         </div>
+        <div class="contenido-ajustes">
         <div class="rest1">
           <h4 class="h4t">Color Scheme</h4>
           <p class="pt">Choose the perfect color mode for your app.</p>
@@ -757,7 +768,7 @@
           <button class="default-button">
             <div class="default-pic">
               <label class="default-label" for="default">
-                <img src="falcon-mode-default.66875604.jpg" />
+                <img src="assets/falcon-mode-default.66875604.jpg" />
               </label>
             </div>
             <div class="input-label-light">
@@ -768,7 +779,7 @@
           <button class="dark-button">
             <div class="dark-pic">
               <label class="dark-label" for="dark">
-                <img src="falcon-mode-dark.651bc4bd.jpg" />
+                <img src="assets/falcon-mode-dark.651bc4bd.jpg" />
               </label>
             </div>
             <div class="input-label-dark">
@@ -786,7 +797,7 @@
             <div class="arrow-left">
               <img
                 class="arrow-left-img"
-                src="left-arrow-from-left.764b929a.svg"
+                src="assets/left-arrow-from-left.764b929a.svg"
                 width="20"
               />
             </div>
@@ -811,7 +822,7 @@
             <div class="arrow-both">
               <img
                 class="arrow-both-img"
-                src="arrows-h.31beeeb2.svg"
+                src="assets/arrows-h.31beeeb2.svg"
                 width="20"
               />
             </div>
@@ -836,7 +847,7 @@
             <div class="horizontal">
               <img
                 class="horizontal-img"
-                src="paragraph.109eeba1.svg"
+                src="assets/paragraph.109eeba1.svg"
                 width="20"
               />
             </div>
@@ -885,7 +896,7 @@
               <button class="transparent-button">
                 <div class="transparent-pic">
                   <label class="transparent-label" for="transparent">
-                    <img src="download.png" />
+                    <img src="assets/download.png" />
                   </label>
                 </div>
                 <div class="input-label-transparent">
@@ -898,7 +909,7 @@
               <button class="inverted-button">
                 <div class="inverted-pic">
                   <label class="inverted-label" for="inverted">
-                    <img src="download (1).png" />
+                    <img src="assets/download (1).png" />
                   </label>
                 </div>
                 <div class="input-label-inverted">
@@ -911,7 +922,7 @@
               <button class="card-button">
                 <div class="card-pic">
                   <label class="card-label" for="card">
-                    <img src="download3.png" />
+                    <img src="assets/download3.png" />
                   </label>
                 </div>
                 <div class="input-label-card">
@@ -924,7 +935,7 @@
               <button class="vibrant-button">
                 <div class="vibrant-pic">
                   <label class="vibrant-label" for="vibrant">
-                    <img src="donwload4.png" />
+                    <img src="assets/donwload4.png" />
                   </label>
                 </div>
                 <div class="input-label-vibrant">
@@ -939,7 +950,7 @@
 
         <!-- Sexto DIV -->
         <div class="imagen">
-          <img class="imagen-final" src="settings.ae4802db.png" width="120" />
+          <img class="imagen-final" src="assets/settings.ae4802db.png" width="120" />
         </div>
         <div class="last-title">
           <h3 class="h3t-last">Like What You See?</h3>
@@ -955,8 +966,10 @@
             </a>
           </div>
         </div>
+      </div>
       </section>
     </section>
+  
 
     <!-- TERMINA VENTANA DE AJUSTES -->
   </body>
