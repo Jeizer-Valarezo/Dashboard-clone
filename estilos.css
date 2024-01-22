@@ -1084,6 +1084,7 @@ strong.highlightM{
 
     .segundoPalabraEsaM:hover{
   text-decoration: underline;
+  cursor: pointer;
     }
   .espaciadorOtroM{
     flex-grow: 0.8;
@@ -1170,6 +1171,8 @@ strong.highlightM{
     border-radius: 50%;
     margin-right: 10px;
   }
+ 
+  
 
   .usuariosTarjetaM{
     display: flex;
@@ -1183,14 +1186,47 @@ strong.highlightM{
     bottom: -5px;
     left: 72%;
     transform: translate(-50%, -50%);
-    width: 20px; /* Ajusta el tamaño del círculo según tus necesidades */
-    height: 20px;
+    width: 15px; 
+    height: 15px;
     border-radius: 50%;
     background-color: green;
     border: 1px solid rgb(255, 255, 255);
   }
 
+  .divImagenM2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    width: 15px; 
+    height: 15px;
+    border-radius: 50%;
+    background-color: orange;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .divImagenM3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    width: 15px; 
+    height: 15px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
   .divImagenM{
+    position: relative;
+    margin: 5px;
+  }
+  .divImagenM2{
+    position: relative;
+    margin: 5px;
+  } .divImagenM3{
     position: relative;
     margin: 5px;
   }
@@ -1209,8 +1245,11 @@ strong.highlightM{
     display: flex;
     justify-content: center;
     height: 30px;
-    background-color: cyan;
+    background-color: #dfdddd;
     align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: blue;
     
   }
 
@@ -1243,10 +1282,10 @@ strong.highlightM{
     flex: 1;
   }
   .circunferencia93M{
-    border: 5px solid red;
+    border: 10px solid grey;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1263,10 +1302,10 @@ strong.highlightM{
     flex-grow: 0.9;
   }
   .circunferencia293M{
-    border: 5px solid brown;
+    border: 10px solid blue;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     position: relative;
     z-index: 2;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 93%, 0 100%);
@@ -1274,6 +1313,20 @@ strong.highlightM{
     
 }
 
+.GBTextoM{
+  font-size: 1.5rem;
+
+}
+.GBTextoM2{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  
+}
+
+.nueveTresM{
+  font-size: 5rem;
+  color: grey;
+}
 .GBsalvedM{
   display: flex;
   flex-direction: column;
@@ -1290,10 +1343,46 @@ strong.highlightM{
 }
 
 .desplegableMesesM{
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .linkUltimoM{
   margin-right: 10px;
   margin-top: 10px;
+}
+
+.ActiveUsersM{
+  margin: 10px;
+}
+
+.RemoveRedM{
+  color: red;
+}
+
+.puntitosM{
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.puntitosM:hover{
+  cursor: pointer;
+}
+
+.bandwidthM{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.puntitos2M{
+  margin-top: 10px;
+  
+}
+.puntitos2M:hover{
+  cursor: pointer;
+}
+
+.linkUltimoM{
+  color: blue;
+}
+.linkUltimoM:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
