@@ -63,7 +63,7 @@ body{
   background-color: var(--white);
   display: flex;
   align-items:center;
-  
+  z-index: 100;
 }
 .navbar{
   display: flex;
@@ -71,7 +71,7 @@ body{
   justify-content: space-between;
   right: 0;
   text-align: center;
-  z-index: -1;
+  z-index: 100;
   
 }
 .nombre-empresa{
@@ -153,7 +153,7 @@ nav ul li a #foto__perfil{
   position: fixed;
   background-color: var(--white); 
   width: 300px;
-  
+  z-index: 100;
  
 }
 .nav__link{
