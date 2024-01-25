@@ -1,7 +1,9 @@
 /* HEADER FIN */
 const boton__sidebar = document.querySelector('#hamburguesita');
 const sidebar = document.querySelector('.sidebar');
-var sidebarWidth = sidebar.offsetWidth;
+let root = document.querySelector(':root');
+let purchase__sidebar = document.querySelector('#purchase_sidebar')
+let sidebarWidth = 300;
 
 function sidebar_display(){
   if (sidebar.style.display === 'none') {
@@ -12,20 +14,42 @@ function sidebar_display(){
     sidebar.style.display = 'none';
   }
 }
+function side_rezise() { /* Ayuda con el responsive de la sidebar  */
+  if (window.matchMedia("(min-width: 1199px)").matches) {
+    sidebar.style.display = 'block';
 
+  } 
+}
 boton__sidebar.addEventListener('click', () => {
   
+  if (sidebarWidth === 300) {
+    root.style.setProperty('--sidebar-width', '60px');
+    sidebarWidth = 60;
+    purchase__sidebar.style.display = 'none';
+  } else {
+    root.style.setProperty('--sidebar-width', '300px');
+    sidebarWidth = 300;
+    purchase__sidebar.style.display = 'block';
+  }
+  if (window.matchMedia("(max-width: 1200px)").matches) {
+
     sidebar_display();
-  
+    purchase__sidebar.style.display = 'block';
+
+  } else {
+    sidebar.style.display = 'block';
+  }
   
 });
 
+window.addEventListener('resize', side_rezise);
 
 
 
 /* HEADER FIN */
 
-/* NAV INICIO */
+/* SIDEBAR INICIO */
+
 let listElements = document.querySelectorAll('.listN__button--click');
 
 listElements.forEach(listElement => {
@@ -42,7 +66,7 @@ listElements.forEach(listElement => {
         menu.style.height = `${height}px`
     })
 })
-/* NAV FIN */
+/* SIDEBAR FIN */
 
 /* Ajustes INICIO */
 const boton__ajustes = document.querySelector('.boton__ajustes');
