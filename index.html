@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <title>Dashboard</title>
   </head>
@@ -592,7 +593,7 @@
             </div>
           </div>
           <div class="circulosM C1">
-           <p class="contenidoExtraM">Regular (895MB)</p>
+           <p class="contenidoExtraM">Regular (895MB)</p> <!--Problema con el responsive-->
           </div>
           <div class="circulosM C2">
            <p class="contenidoExtraM">System (379MB)</p> 
@@ -703,7 +704,7 @@
             <span class="dineroProductoM">%7</span>
           </div> 
               <div class="FormularioM">
-                <select class="selectFormularioM" name="" id=""> <!--EL desplegable quiza funciona correctamente cuando haya contenido debajo de mi trabajo-->
+                <select class="selectFormularioM" name="" id="">
                   <option value="Last 7 days">Last 7 days</option>
                   <option value="Last Month"> Last Month</option>
                   <option value="Last year">Last year</option> </select>
@@ -724,7 +725,7 @@
           </div>
           <div class="espaciador7M"></div>
           <div class="botonesrafa">
-            <button class="clasemisma">1</button>
+            <button class="clasemisma1">1</button>
             <button class="clasemisma">2</button>
           </div>
           </div>
@@ -783,7 +784,9 @@
           </div>
           <div class="espaciador7M"></div>
           <div class="botonesrafa">
-            <button class="clasemisma">1</button>
+            <button class="clasemisma"><span class="material-symbols-outlined">
+              download_2
+              </span></button>
             <button class="clasemisma">2</button>
           </div>
           </div>
@@ -800,6 +803,7 @@
         <div class="espaciador8M"></div>
         <div>
           <select class="puntitosM" name="select" id="">
+            <option value="" hidden> ...</option>
             <option value="">View</option>
             <option value="">Export</option>
           
@@ -882,6 +886,7 @@
         <div class="espaciador10M"></div>
         <div>
           <select class="puntitos2M" name="" id="">
+            <option value="" hidden>...</option>
             <option value="">View</option>
             <option value="">Export</option>
             <option class="RemoveRedM" value="">Remove</option>

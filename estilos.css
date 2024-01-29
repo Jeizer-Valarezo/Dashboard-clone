@@ -742,7 +742,7 @@ h6 svg {
 
 .StorageM p {
   margin-top: 0px;
-  color: #131414;
+ 
 }
 
 /*
@@ -817,7 +817,7 @@ strong.highlightM{
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  margin-right: 95px;
+  margin-right: 115px;
   background-color: purple;
   justify-content: center;
 }
@@ -866,7 +866,8 @@ strong.highlightM{
 }
 
 .cabeceraProductosM {
-  background-color: #dfdddd;
+  
+  background-color:#f9fafd ;
   height: 40px;
   display: flex;
   width: auto;
@@ -933,8 +934,11 @@ strong.highlightM{
   margin-left: 10px;
 }
 
-.contenidoExtraM {
+.contenidoExtraM{
   color: #9da9bb;
+ font-family:"Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+ font-weight: 500;
+ 
 }
 
 .BarraHorizProgM {
@@ -1042,7 +1046,7 @@ strong.highlightM{
   justify-content: space-between;
   padding-left: 15px;
   padding-bottom: 5px;
-  background-color: #cfcfcf;
+  background-color: #f9fafd;
   padding-top: 5px;
   padding-right: 15px;
   border-bottom-right-radius: 10px;
@@ -1059,7 +1063,7 @@ strong.highlightM{
 }
 
 .tituloDeCategoriaM{
-  background-color: #dfdddd;
+  background-color: #f9fafd;
   height: 40px;
   display: flex;
   width: auto;
@@ -1076,7 +1080,7 @@ strong.highlightM{
   }
   .segundoPalabraEsaM{
       margin-left: 10px;
-      margin-top: 5px;
+      margin-top: 10px;
       white-space: nowrap;
       font-size: 13px;
       color: blue;
@@ -1155,7 +1159,7 @@ strong.highlightM{
     height: 40px;
     width: auto;
     display: flex;
-    background-color: #dfdddd;
+    background-color: #f9fafd;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
@@ -1245,7 +1249,7 @@ strong.highlightM{
     display: flex;
     justify-content: center;
     height: 30px;
-    background-color: #dfdddd;
+    background-color: #f9fafd;
     align-items: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -1265,7 +1269,7 @@ strong.highlightM{
     height: 40px;
     width: auto;
     display: flex;
-  background-color: #dfdddd;
+  background-color: #f9fafd;
   border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   
@@ -1336,7 +1340,7 @@ strong.highlightM{
 .cabeceraUltima2M{
   display: flex;
   justify-content: space-between;
-  background-color: #dfdddd;
+  background-color: #f9fafd;
   height: 40px;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -1385,4 +1389,13 @@ strong.highlightM{
 .linkUltimoM:hover{
   text-decoration: underline;
   cursor: pointer;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
