@@ -43,6 +43,7 @@ body{
                           "sidebar contenido"
                           "sidebar contenido";
   background-color: var(--fondo);
+  width: 80%;
   
   
   
@@ -52,16 +53,17 @@ body{
 
 .contenido{
   grid-area: contenido;
-  border: 5px solid green;
+  
 }
 
 /* HEADER INICIO */
 .header{
   top: 0;
+  left: 10%;
   width: 100%;
   position: fixed;
   height: 80px;
-  background-color: var(--white);
+  background-color: var(--fondo);
   display: flex;
   align-items:center;
   z-index: 100;
@@ -69,8 +71,8 @@ body{
 .navbar{
   display: flex;
   position: absolute;
-  justify-content: space-between;
-  right: 0;
+  left: 65%;
+  
   text-align: center;
   z-index: 100;
   
@@ -82,7 +84,7 @@ body{
 }
 .nav__menu--link{
   text-decoration: none;
-  color: red;
+  
 }
 .nav__menu{
   display: flex;
@@ -105,13 +107,36 @@ body{
 .logo img {
   height: 40px;
 }
-.barra__busqueda{
-  height: 20px;
+
+.busqueda{
+  margin-left: 30px;
+  background-color: white;
   border-radius: 2cm;
+  display: flex;
+  align-items:center;
+  overflow: hidden;
 }
+.lupita{
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.barra__busqueda{
+  border: none;
+  height: 40px;
+}
+
 .boton__ajustes-animation{
-  animation: rotate 5s linear infinite;
-  
+  animation: rotate 2s forwards infinite; 
+}
+.ripple{
+  position: absolute;
+  border: 5px solid rgba(0,210,122,.3);
+  animation: ripple 2s infinite;
+  border-radius: 50%;
+  top: 12px;
+  left: 15px;
 }
 
 .perfil{
@@ -152,7 +177,8 @@ nav ul li a #foto__perfil{
   /*SIDEBAR INICIO*/
 .sidebar{
   position: fixed;
-  background-color: var(--white); 
+  left: 10%;
+  background-color: var(--fondo); 
   width: var(--sidebar-width);
   z-index: 100;
   display: block;
@@ -233,7 +259,10 @@ nav ul li a #foto__perfil{
 }
   /*SIDEBAR FIN*/
 /* Contenido INICIO */
-
+.contenido{
+  position: relative;
+  left: calc(15% );
+}
 
 /* Contenido FIN*/
 
@@ -1291,8 +1320,7 @@ strong.highlightM{
     display: flex;
     flex: auto;
 }
-  .textoFotoM{}
-
+ 
 .NombreM{
   color:#5e6e82;
   margin-right:20px;
@@ -1585,7 +1613,15 @@ strong.highlightM{
     transform: rotate(360deg);
   }
 }
+@keyframes ripple {
+  from{
 
+  }
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
 /* Animación de onda */
 
 /* ANIMACIONES FIN  */
@@ -1598,14 +1634,22 @@ strong.highlightM{
     grid-template-areas:
       "contenido contenido"
       "contenido contenido";
+    width: 100%;
+  }
+  .header{
+    left: 0;
   }
   .sidebar {
+    left: 0;
     display: none;
     width: 100%;
     
   }
-  .barra__busqueda {
+  .busqueda {
     display: none;
+  }
+  .contenido{
+    left: 0;
   }
 }
 /* Responsive Fin */
