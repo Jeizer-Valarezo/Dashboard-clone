@@ -10,7 +10,7 @@
   --green: #00d27a;
   --teal: #02a8b5;
   --cyan: #27bcfd;
-  --white: #fff;
+  --white: #f9fafd;
   --gray: #cfcfcf;
   --gray-dark: #757b84;
   --primary: #2c7be5;
@@ -21,6 +21,7 @@
   --danger: #e63757;
   --light: #f9fafd;
   --dark: #000000;
+  --sidebar-width: 300px;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -31,17 +32,18 @@
 *{
   padding: 0;
   margin: 0;
- 
+ transition: 0.2s;
 }
 body{
   padding-top:80px;
   display: grid;
-  grid-template-columns: 300px calc(100% - 300px);
+  grid-template-columns: var(--sidebar-width) calc(100% - var(--sidebar-width));
   grid-template-rows:1fr 1fr;
   grid-template-areas:    
                           "sidebar contenido"
                           "sidebar contenido";
   background-color: var(--fondo);
+  width: 80%;
   
   
   
@@ -51,27 +53,28 @@ body{
 
 .contenido{
   grid-area: contenido;
-  border: 5px solid green;
+  
 }
 
 /* HEADER INICIO */
 .header{
   top: 0;
+  left: 10%;
   width: 100%;
   position: fixed;
   height: 80px;
-  background-color: var(--white);
+  background-color: var(--fondo);
   display: flex;
   align-items:center;
-  
+  z-index: 100;
 }
 .navbar{
   display: flex;
   position: absolute;
-  justify-content: space-between;
-  right: 0;
+  left: 65%;
+  
   text-align: center;
-  z-index: -1;
+  z-index: 100;
   
 }
 .nombre-empresa{
@@ -81,7 +84,7 @@ body{
 }
 .nav__menu--link{
   text-decoration: none;
-  color: red;
+  
 }
 .nav__menu{
   display: flex;
@@ -104,13 +107,36 @@ body{
 .logo img {
   height: 40px;
 }
-.barra__busqueda{
-  height: 20px;
+
+.busqueda{
+  margin-left: 30px;
+  background-color: white;
   border-radius: 2cm;
+  display: flex;
+  align-items:center;
+  overflow: hidden;
 }
+.lupita{
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.barra__busqueda{
+  border: none;
+  height: 40px;
+}
+
 .boton__ajustes-animation{
-  animation: rotate 5s linear infinite;
-  
+  animation: rotate 2s forwards infinite; 
+}
+.ripple{
+  position: absolute;
+  border: 5px solid rgba(0,210,122,.3);
+  animation: ripple 2s infinite;
+  border-radius: 50%;
+  top: 12px;
+  left: 15px;
 }
 
 .perfil{
@@ -151,8 +177,11 @@ nav ul li a #foto__perfil{
   /*SIDEBAR INICIO*/
 .sidebar{
   position: fixed;
-  background-color: var(--white); 
-  width: 300px;
+  left: 10%;
+  background-color: var(--fondo); 
+  width: var(--sidebar-width);
+  z-index: 100;
+  display: block;
   
  
 }
@@ -185,6 +214,9 @@ nav ul li a #foto__perfil{
   width: 100%;
   list-style: none;
   
+}
+.listN__img{
+  padding-left: 15px;
 }
 
 .listN__item--click{
@@ -227,7 +259,10 @@ nav ul li a #foto__perfil{
 }
   /*SIDEBAR FIN*/
 /* Contenido INICIO */
-
+.contenido{
+  position: relative;
+  left: calc(15% );
+}
 
 /* Contenido FIN*/
 
@@ -237,7 +272,7 @@ nav ul li a #foto__perfil{
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100vh;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   display: none;
 }
@@ -632,80 +667,262 @@ input:checked + .slider:before {
 
 /* TERMINA VENTANA DE AJUSTES */
 
-/* ANIMACIONES INICIO */
-/* Animación de rotación */
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-/* Animación de onda */
-
-/* ANIMACIONES FIN  */
-
-/* Responsive Inicio */
-@media (max-width: 1200px) {
-  body {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px 1fr;
-    grid-template-areas:
-      "contenido contenido"
-      "contenido contenido";
-  }
-  .sidebar {
-    position: fixed;
-    width: 100%;
-    display: none;
-  }
-  .barra__busqueda {
-    display: none;
-  }
-}
-/* Responsive Fin */
 /*Secciones*/
-.card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 0 solid #edf2f9;
-  border-radius: 0.375rem;
-  width: 40%;
-  margin: 40px;
+.cuadros{
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
 }
-h6 {
-  outline: 1px solid #4371d0 !important;
-  margin-bottom: 0 !important;
-  font-size: 0.83333rem;
-}
-h6 svg {
-  width: 1%;
-}
-.card-header {
-  padding: 10px;
-  background-color: #f0f0f0;
+.cuadro1, .cuadro2, .cuadro3, .cuadro4{
+  width: 48%; 
+  height: 130px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Espaciado entre los cuadros */
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-header h6 {
-  margin: 0;
+.infoDer{
+  width: 36%;
+  float: right;
+  padding-right: 30px;
+  margin-top: 3%;
+}
+.infoIzq{
+  width: 45%;
+  height: auto;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.line-height-1{
+  line-height: 0.5;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #5e6e82!important;
+  font-size: 2.0736rem;
+  font-weight: 400!important;
+  margin-bottom: 10px;
+ 
+}
+h5{
+  font-size: 16px;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  line-height: 1.2;
+  color: #344050;
+  margin-block-end: 2.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-.card-body {
-  padding: 10px;
+h5 span, .marcas{
+  font-size: .69444rem;
 }
-.card-left {
+.cuadroVerde{
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #00864e;
+  background-color: #ccf6e4;
+  padding-right: 0.71111em;
+  padding-left: 0.71111em;
+  border-radius: 10rem; 
+  display: inline-block;
+  padding: 0.35556em 0.71111em;
+  font-size: 75%;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-top: 10px;
+}
+.cuadroAzul{
+  font-size: .69444rem;
+  color: #1978a2;
+  background-color: #d4f2ff;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  padding-right: 0.71111em;
+  padding-left: 0.71111em;
+  border-radius: 10rem;
+  display: inline-block;
+  padding: 0.35556em 0.71111em;
+  font-size: 75%;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin-top: 10px;
+}
+.samsung, .huawei, .apple{
+  width: 100%;
+  line-height: 0.8;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.circuloH, .circuloS, .circuloA{
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+
+}
+
+.porcentaje{
+  margin-left: 30%;
+  width: 50%;
+  padding-right: 20px;
+  text-align: right;
+}
+.huawei .porcentaje{
+  padding-left: 4%;
+}
+
+.infoTiempoIzq{
+  margin-top: 10px;
+  width: 60%;
+  height: 30px;
   float: left;
 }
-.card-rigth {
+.infoTiempoDer{
+  width: 35%;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+
+}
+.tiempoIzq{
+  width: 25%;
+  margin-right: 1rem!important;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  border-style: none;
+  float: left;
+}
+.tiempoDer{
+  width: 65%;
   float: right;
 }
+.tiempoDer h5{
+  margin-bottom: 6px;
+}
 
+.soleado{
+  color: rgba(245, 130, 62, 1);
+  font-size: .69444rem;
+}
+.prec{
+  font-size: .69444rem;
+}
+.gradosG{
+  line-height: 1;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 2.0736rem;
+  color: #2c7be5!important;
+  font-weight: 400!important;
+  text-align: right;
+}
+.gradosP{
+  color: #4d5969!important;
+  font-size: .83333rem;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.menu-container{
+  text-align: right;
+}
+.menu-btn {
+  background-color: #ffffff;
+  border: none;
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-container:hover .dropdown-menu {
+  display: block;
+}
+
+hr{
+  color: red;
+}
+.miGrafico{
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  transition: opacity 0.3s ease;
+}
+.miGrafico:hover{
+  opacity: 0.8;
+}
+
+.miGrafico2 {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease; 
+}
+
+.miGrafico2:hover {
+  opacity: 0.8; 
+}
+
+.miGrafico3{
+  width: 75%;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+.miGrafico3:hover{
+  opacity: 0.8;
+}
+.dentroGrafica{
+  font-weight: 500!important;
+  font-size: 1.44rem;
+  position: absolute;
+  left: 51%;
+  bottom: 52%;
+  color:#0b1727!important;
+}
 /*contenido migue*/
 
 .parteMigue1 {
@@ -1107,8 +1324,7 @@ strong.highlightM{
     display: flex;
     flex: auto;
 }
-  .textoFotoM{}
-
+ 
 .NombreM{
   color:#5e6e82;
   margin-right:20px;
@@ -1391,11 +1607,53 @@ strong.highlightM{
   cursor: pointer;
 }
 
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+/* ANIMACIONES INICIO */
+/* Animación de rotación */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
+@keyframes ripple {
+  from{
+
+  }
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+/* Animación de onda */
+
+/* ANIMACIONES FIN  */
+
+/* Responsive Inicio */
+@media (max-width: 1200px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+      "contenido contenido"
+      "contenido contenido";
+    width: 100%;
+  }
+  .header{
+    left: 0;
+  }
+  .sidebar {
+    left: 0;
+    display: none;
+    width: 100%;
+    
+  }
+  .busqueda {
+    display: none;
+  }
+  .contenido{
+    left: 0;
+  }
+}
+/* Responsive Fin */
