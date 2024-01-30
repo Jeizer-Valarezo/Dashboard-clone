@@ -1640,6 +1640,39 @@ strong.highlightM{
 }
 .colorTickM{
   color: #00864e;
+
+}
+
+
+.custom-select{
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+}
+.options {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.nombreUsuariosM p{
+ color:#9da9bb;
+ font-weight: 200;
+ font-size: 0.80rem;
+ margin-top: 2px;
 }
 
 /* ANIMACIONES INICIO */

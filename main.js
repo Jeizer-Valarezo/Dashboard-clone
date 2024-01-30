@@ -206,3 +206,27 @@ document.addEventListener("DOMContentLoaded", function() {
   
   
 /* Ajustes FIN */
+
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+      const customSelect = document.getElementById('customSelect');
+      const selectedOption = customSelect.querySelector('.selected-option');
+      const optionsContainer = customSelect.querySelector('.options');
+      const options = customSelect.querySelectorAll('.option');
+
+      // Event listener para mostrar/ocultar opciones al hacer clic en el div
+      selectedOption.addEventListener('click', function () {
+        optionsContainer.style.display = optionsContainer.style.display === 'none' ? 'block' : 'none';
+      });
+
+      // Event listener para manejar la selección de una opción
+      options.forEach(option => {
+        option.addEventListener('click', function () {
+          const selectedValue = this.getAttribute('data-value');
+          selectedOption.textContent = `Opción seleccionada: ${selectedValue}`;
+          optionsContainer.style.display = 'none';
+        })
+      })
+    });
+  
