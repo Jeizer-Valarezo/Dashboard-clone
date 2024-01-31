@@ -1,4 +1,4 @@
-/* HEADER FIN */
+/* HEADER INICIO */
 const boton__sidebar = document.querySelector('#hamburguesita');
 const sidebar = document.querySelector('.sidebar');
 let root = document.querySelector(':root');
@@ -186,6 +186,8 @@ const miGrafico3 = new Chart(ctx3, {
 /* Ajustes INICIO */
 const boton__ajustes = document.querySelector('.boton__ajustes');
 const ajustes = document.querySelector('.capa__ajustes');
+const darkmode =document.querySelector('#dark');
+const lightmode =document.querySelector('#light');
 boton__ajustes.addEventListener('click', () => {
   
   if (ajustes.style.display === 'none') {
@@ -203,6 +205,16 @@ document.addEventListener("DOMContentLoaded", function() {
       capaAjustes.style.display = "none";
     });
   });
+darkmode.addEventListener("click", () => {
+  root.style.setProperty('--fondo', 'rgb(6,19,37)');
+  root.style.setProperty('--complemento-fondo', 'rgb(19,34,56)');
+  root.style.setProperty('--cards', 'rgb(14,28,47)');
+})
+lightmode.addEventListener("click", () => {
+  root.style.setProperty('--fondo', '#edf2f9');
+  root.style.setProperty('--complemento-fondo', '#f9fafd');
+  root.style.setProperty('--cards', '#ffffff');
+})
   
   
 /* Ajustes FIN */

@@ -1,5 +1,6 @@
 :root {
   --fondo:#edf2f9;
+  --complemento-fondo: #f9fafd;
   --blue: #2c7be5;
   --indigo: #727cf5;
   --purple: #6b5eae;
@@ -21,6 +22,7 @@
   --danger: #e63757;
   --light: #f9fafd;
   --dark: #000000;
+  --cards: #ffffff;
   --sidebar-width: 300px;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -247,6 +249,7 @@ nav ul li a #foto__perfil{
   color: var(--blue);
   font-weight: bold;
   background-color:#ccdef6;
+  height: 10px;
   padding-right: 0.71111em;
   padding-left: 0.71111em;
   border-radius: 10rem;
@@ -285,7 +288,7 @@ nav ul li a #foto__perfil{
     width: 350px;
     height: 100vh;
     overflow: scroll;
-    background-color: var(--white);
+    background-color: var(--fondo);
 }
 
 /* Primer DIV */
@@ -513,7 +516,7 @@ label img {
   width: 12px;
   left: 2px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--fondo);
   border-radius: 50%;
   transition: 0.4s;
   top: 2px;
@@ -681,7 +684,7 @@ input:checked + .slider:before {
 .cuadro1, .cuadro2, .cuadro3, .cuadro4{
   width: 48%; 
   height: 130px;
-  background-color: #ffffff;
+  background-color: var(--cards);
   border: 1px solid #cccccc;
   border-radius: 5px;
   margin-bottom: 20px; /* Espaciado entre los cuadros */
@@ -844,7 +847,7 @@ h5 span, .marcas{
   text-align: right;
 }
 .menu-btn {
-  background-color: #ffffff;
+  background-color: var(--cards);
   border: none;
   color: #333;
   padding: 10px;
@@ -933,14 +936,14 @@ hr{
 }
 
 .ContenedorPriM {
-  background-color:#edf2f9 ;
+  background-color:transparent ;
 
   display: flex;
   margin-left: 20px;
 }
 
 .ContenedorSecuM {
-  background-color: #edf2f9;
+  background-color: transparent;
   margin-left: 20px;
   
 
@@ -951,7 +954,7 @@ hr{
   padding: 15px;
   flex: 1 75%;
   margin: 5px;
-  background-color: white;
+  background-color: var(--cards);
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1008,14 +1011,14 @@ strong.highlightM{
 .runningM {
   flex: 1 25%;
   margin: 5px;
-  background-color: white;
+  background-color: var(--cards);
   border-radius: 10px;
 }
 
 .bestSellingM {
   flex: 1 75%;
   margin: 5px;
-  background-color: white;
+  background-color: var(--cards);
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -1026,7 +1029,7 @@ strong.highlightM{
   margin: 5px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--cards);
   border-radius:10px
 }
 
@@ -1089,7 +1092,7 @@ strong.highlightM{
 
 .cabeceraProductosM {
   
-  background-color:#f9fafd ;
+  background-color:var(--complemento-fondo) ;
   height: 40px;
   display: flex;
   width: auto;
@@ -1257,7 +1260,7 @@ strong.highlightM{
 }
 
 .BotonVerM {
-  background-color: white;
+  background-color: var(--fondo);
   border: 1px solid rgb(143, 134, 134);
   border-radius: 5px;
   padding: 5px;
@@ -1265,7 +1268,7 @@ strong.highlightM{
 }
 
 .BotonVerM:active {
-  background-color: gray;
+  background-color: #344050;
 }
 
 .BotonVerM:hover {
@@ -1276,7 +1279,7 @@ strong.highlightM{
   justify-content: space-between;
   padding-left: 15px;
   padding-bottom: 5px;
-  background-color: #f9fafd;
+  background-color: var(--complemento-fondo);
   padding-top: 5px;
   padding-right: 15px;
   border-bottom-right-radius: 10px;
@@ -1293,7 +1296,7 @@ strong.highlightM{
 }
 
 .tituloDeCategoriaM{
-  background-color: #f9fafd;
+  background-color: var(--complemento-fondo);
   height: 40px;
   display: flex;
   width: auto;
@@ -1380,14 +1383,14 @@ strong.highlightM{
   .quintaTarjetaM{
    margin: 5px;
     flex: 1 50%;
-    background-color: white;
+    background-color: var(--cards);
     border-radius: 15px;
 
   }
 
   .sextaTarjetaM{
     flex: 1 50%;
-    background-color: white;
+    background-color: var(--cards);
     margin:5px;
     flex-direction: column;
     display: flex;
@@ -1397,7 +1400,7 @@ strong.highlightM{
     height: 40px;
     width: auto;
     display: flex;
-    background-color: #f9fafd;
+    background-color: var(--complemento-fondo);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
@@ -1487,7 +1490,7 @@ strong.highlightM{
     display: flex;
     justify-content: center;
     height: 30px;
-    background-color: #f9fafd;
+    background-color: var(--complemento-fondo);
     align-items: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -1508,7 +1511,7 @@ strong.highlightM{
     height: 40px;
     width: auto;
     display: flex;
-  background-color: #f9fafd;
+  background-color: var(--complemento-fondo);
   border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   
@@ -1579,7 +1582,7 @@ strong.highlightM{
 .cabeceraUltima2M{
   display: flex;
   justify-content: space-between;
-  background-color: #f9fafd;
+  background-color: var(--complemento-fondo);
   height: 40px;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
