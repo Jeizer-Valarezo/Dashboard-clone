@@ -1167,40 +1167,25 @@
         <div class="top">
           <div class="top-left">
             <div class="titulo">
-              <svg
-                class="svgt"
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="palette"
-                class="svg-inline--fa fa-palette fa-w-16 mr-2 fs-0"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"
-                ></path>
-              </svg>
-              <h3 class="hrt">Settings</h3>
+              <svg class="svgt" id="svg1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="palette" class="svg-inline--fa fa-palette fa-w-16 mr-2 fs-0" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
+              <h3 class="h3t" id="settingsT">Settings</h3>
             </div>
-            <p class="pt">Set your own customized style</p>
+            <p class="pt" id="ptT">Set your own customized style</p>
           </div>
           <div class="button">
             <button class="close-button">X</button>
           </div>
         </div>
         <div class="contenido-ajustes">
-          <div class="rest1">
-            <h4 class="h4t">Color Scheme</h4>
-            <p class="pt">Choose the perfect color mode for your app.</p>
-          </div>
+        <div class="rest1">
+          <h4 class="h4t">Color Scheme</h4>
+          <p class="pt">Choose the perfect color mode for your app.</p>
+        </div>
           <div class="theme">
             <button class="default-button">
               <div class="default-pic">
                 <label class="default-label" for="light">
-                  <img src="assets/falcon-mode-default.66875604.jpg" />
+                  <img class="light-mode-img"src="assets/falcon-mode-default.66875604.jpg" onclick="toggleBorder(this)" />
                 </label>
               </div>
               <div class="input-label-light">
@@ -1211,7 +1196,7 @@
             <button class="dark-button">
               <div class="dark-pic">
                 <label class="dark-label" for="dark">
-                  <img src="assets/falcon-mode-dark.651bc4bd.jpg" />
+                  <img class="dark-mode-img" src="assets/falcon-mode-dark.651bc4bd.jpg" onclick="toggleBorder(this)"/>
                 </label>
               </div>
               <div class="input-label-dark">
@@ -1246,9 +1231,9 @@
             </div>
           </div>
           <hr class="dos-tres" />
-
+  
           <!-- Tercer DIV -->
-
+  
           <div class="third">
             <div class="fluid-layout">
               <div class="arrow-both">
@@ -1271,9 +1256,9 @@
             </div>
           </div>
           <hr class="tres-cuatro" />
-
+  
           <!-- Cuarto DIV -->
-
+  
           <div class="fourth">
             <div class="navigation-position">
               <div class="horizontal">
@@ -1313,9 +1298,9 @@
             </div>
           </div>
           <hr class="tres-cuatro" />
-
+  
           <!-- Quinto DIV -->
-
+  
           <div class="fifth">
             <div class="navbar-style">
               <div class="navbar-title">
@@ -1328,14 +1313,12 @@
                 <button class="transparent-button">
                   <div class="transparent-pic">
                     <label class="transparent-label" for="transparent">
-                      <img src="assets/download.png" />
+                      <img class="nav1-img" src="assets/download.png" onclick="toggleBorderFin(this)"/>
                     </label>
                   </div>
                   <div class="input-label-transparent">
                     <input type="radio" class="transparent" name="nav" />
-                    <label class="Transparent" for="transparent"
-                      >Transparent</label
-                    >
+                    <label class="Transparent" for="transparent">Transparent</label>
                   </div>
                 </button>
               </div>
@@ -1343,7 +1326,7 @@
                 <button class="inverted-button">
                   <div class="inverted-pic">
                     <label class="inverted-label" for="inverted">
-                      <img src="assets/download (1).png" />
+                      <img class="nav2-img" src="assets/download (1).png" onclick="toggleBorderFin(this)"/>
                     </label>
                   </div>
                   <div class="input-label-inverted">
@@ -1353,15 +1336,15 @@
                 </button>
               </div>
               <div class="nav3">
-                <button class="card-button">
-                  <div class="card-pic">
-                    <label class="card-label" for="card">
-                      <img src="assets/download3.png" />
+                <button class="cardT-button">
+                  <div class="cardT-pic">
+                    <label class="cardT-label" for="cardT">
+                      <img class="nav3-img" src="assets/download3.png" onclick="toggleBorderFin(this)" />
                     </label>
                   </div>
-                  <div class="input-label-card">
-                    <input type="radio" class="card" name="nav" />
-                    <label class="Card" for="card">Card</label>
+                  <div class="input-label-cardT">
+                    <input type="radio" class="cardT" name="nav" />
+                    <label class="CardT" for="cardT">Card</label>
                   </div>
                 </button>
               </div>
@@ -1369,7 +1352,7 @@
                 <button class="vibrant-button">
                   <div class="vibrant-pic">
                     <label class="vibrant-label" for="vibrant">
-                      <img src="assets/donwload4.png" />
+                      <img class="nav4-img" src="assets/donwload4.png" onclick="toggleBorderFin(this)"/>
                     </label>
                   </div>
                   <div class="input-label-vibrant">
@@ -1381,14 +1364,10 @@
             </div>
           </div>
           <hr class="cinco-seis" />
-
+  
           <!-- Sexto DIV -->
           <div class="imagen">
-            <img
-              class="imagen-final"
-              src="assets/settings.ae4802db.png"
-              width="120"
-            />
+            <img class="imagen-final" src="assets/settings.ae4802db.png" width="120" />
           </div>
           <div class="last-title">
             <h3 class="h3t-last">Like What You See?</h3>
@@ -1405,8 +1384,8 @@
             </div>
           </div>
         </div>
+        </section>
       </section>
-    </section>
 
     <!-- TERMINA VENTANA DE AJUSTES -->
   </body>

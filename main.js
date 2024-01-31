@@ -1,6 +1,7 @@
 /* HEADER INICIO */
 const boton__sidebar = document.querySelector('#hamburguesita');
 const sidebar = document.querySelector('.sidebar');
+const body = document.querySelector('body');
 let root = document.querySelector(':root');
 let purchase__sidebar = document.querySelector('#purchase_sidebar')
 let sidebarWidth = 300;
@@ -67,6 +68,8 @@ listElements.forEach(listElement => {
     })
 })
 /* SIDEBAR FIN */
+
+/* CONTENIDO INICIO */
 /*GRÁFICOS*/
 /*Gráfico 1*/
 const ctx = document.getElementById('miGrafico').getContext('2d');
@@ -248,6 +251,30 @@ function showChart() {
 document.addEventListener('DOMContentLoaded', function() {
   showChart();});
 
+
+/* Cards 2 --> */
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const customSelect = document.getElementById('customSelect');
+    const selectedOption = customSelect.querySelector('.selected-option');
+    const optionsContainer = customSelect.querySelector('.options');
+    const options = customSelect.querySelectorAll('.option');
+
+    // Event listener para mostrar/ocultar opciones al hacer clic en el div
+    selectedOption.addEventListener('click', function () {
+      optionsContainer.style.display = optionsContainer.style.display === 'none' ? 'block' : 'none';
+    });
+
+    // Event listener para manejar la selección de una opción
+    options.forEach(option => {
+      option.addEventListener('click', function () {
+        const selectedValue = this.getAttribute('data-value');
+        selectedOption.textContent = `Opción seleccionada: ${selectedValue}`;
+        optionsContainer.style.display = 'none';
+      })
+    })
+  });
+/* CONTENIDO FIN */
 /* Ajustes INICIO */
 const boton__ajustes = document.querySelector('.boton__ajustes');
 const ajustes = document.querySelector('.capa__ajustes');
@@ -257,6 +284,7 @@ boton__ajustes.addEventListener('click', () => {
   
   if (ajustes.style.display === 'none') {
     ajustes.style.display = 'block';
+    body.style.overflow = 'hidden';
   } else {
     
     ajustes.style.display = 'none';
@@ -268,42 +296,44 @@ document.addEventListener("DOMContentLoaded", function() {
     const capaAjustes = document.querySelector(".capa__ajustes");
     closeButton.addEventListener("click", function() {
       capaAjustes.style.display = "none";
+      body.style.overflow = 'scroll';
     });
   });
 darkmode.addEventListener("click", () => {
   root.style.setProperty('--fondo', 'rgb(6,19,37)');
   root.style.setProperty('--complemento-fondo', 'rgb(19,34,56)');
   root.style.setProperty('--cards', 'rgb(14,28,47)');
+  root.style.setProperty('--font-color', '#fff');
 })
 lightmode.addEventListener("click", () => {
   root.style.setProperty('--fondo', '#edf2f9');
   root.style.setProperty('--complemento-fondo', '#f9fafd');
   root.style.setProperty('--cards', '#ffffff');
+  root.style.setProperty('--font-color', '#000000');
 })
   
+function toggleBorder(element) {
+   
+  document.querySelectorAll('.light-mode-img, .dark-mode-img').forEach(img => {
+      img.classList.remove('selected');
+  });
+
+  
+  element.classList.add('selected');
+}
+
+function toggleBorderFin(element) {
+
+  document.querySelectorAll(".nav1-img, .nav2-img, .nav3-img, .nav4-img").forEach(img => {
+      img.classList.remove('selected');
+  });
+
+  element.classList.add('selected');
+}
   
 /* Ajustes FIN */
 
 
 
-      document.addEventListener("DOMContentLoaded", function () {
-      const customSelect = document.getElementById('customSelect');
-      const selectedOption = customSelect.querySelector('.selected-option');
-      const optionsContainer = customSelect.querySelector('.options');
-      const options = customSelect.querySelectorAll('.option');
-
-      // Event listener para mostrar/ocultar opciones al hacer clic en el div
-      selectedOption.addEventListener('click', function () {
-        optionsContainer.style.display = optionsContainer.style.display === 'none' ? 'block' : 'none';
-      });
-
-      // Event listener para manejar la selección de una opción
-      options.forEach(option => {
-        option.addEventListener('click', function () {
-          const selectedValue = this.getAttribute('data-value');
-          selectedOption.textContent = `Opción seleccionada: ${selectedValue}`;
-          optionsContainer.style.display = 'none';
-        })
-      })
-    });
+      
   
