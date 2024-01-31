@@ -303,7 +303,7 @@ darkmode.addEventListener("click", () => {
   root.style.setProperty('--fondo', 'rgb(6,19,37)');
   root.style.setProperty('--complemento-fondo', 'rgb(19,34,56)');
   root.style.setProperty('--cards', 'rgb(14,28,47)');
-  root.style.setProperty('--font-color', '#fff');
+  root.style.setProperty('--font-color', '#cfcfcf');
 })
 lightmode.addEventListener("click", () => {
   root.style.setProperty('--fondo', '#edf2f9');

@@ -48,12 +48,23 @@ body{
   background-color: var(--fondo);
   width: 80%;
   overflow-y: scroll;
+  overflow-x: none;
   
   
 }
+body::-webkit-scrollbar {
+  width: 12px; /* ancho de toda la barra de desplazamiento */
+  color: transparent;
+}
+body::-webkit-scrollbar-track {
+  background: transparent; /* color del área de seguimiento */
+}
 
-
-
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary); /* color del pulgar de desplazamiento */
+  border-radius: 20px; /* redondez del pulgar de desplazamiento */
+  border: 3px solid var(--complemento-fondo); /* crea un relleno alrededor del pulgar de desplazamiento */
+}
 .contenido{
   grid-area: contenido;
   
@@ -115,7 +126,7 @@ body{
 
 .busqueda{
   margin-left: 30px;
-  background-color: white;
+  background-color: var(--cards);
   border-radius: 2cm;
   display: flex;
   align-items:center;
@@ -126,10 +137,14 @@ body{
   height: 20px;
   width: 20px;
   margin-left: 10px;
+  margin-right: 5px;
 }
 
 .barra__busqueda{
   border: none;
+  color: var(--font-color);
+  background-color: var(--cards);
+  width: 100%;
   height: 40px;
 }
 
@@ -225,7 +240,7 @@ nav ul li a #foto__perfil{
 .listN::-webkit-scrollbar-thumb {
   background-color: var(--primary); /* color del pulgar de desplazamiento */
   border-radius: 20px; /* redondez del pulgar de desplazamiento */
-  border: 3px solid var(--dark-font); /* crea un relleno alrededor del pulgar de desplazamiento */
+  border: 3px solid var(--complemento-fondo); /* crea un relleno alrededor del pulgar de desplazamiento */
 }
 .listN__item{
   width: 100%;
