@@ -85,7 +85,7 @@ const data = {
   }]
 };
 
-let options = {
+const options = {
   scales: {
     x: {
       display: false, 
@@ -102,7 +102,7 @@ let options = {
   maintainAspectRatio: false,
 };
 
-let miGrafico = new Chart(ctx, {
+const miGrafico = new Chart(ctx, {
   type: 'bar',
   data: data,
   options: options
@@ -147,7 +147,7 @@ const options2 = {
   maintainAspectRatio: false,
 };
 
-var miGrafico2 = new Chart(ctx2, {
+const miGrafico2 = new Chart(ctx2, {
   type: 'line',
   data: data2,
   options: options2
@@ -182,6 +182,71 @@ const miGrafico3 = new Chart(ctx3, {
   data: data3,
   options: options3
 });
+
+/*Grafico 4*/
+
+const chartData = {
+  january: [60, 80, 60, 80, 65, 130, 120, 100 ,30 ,40 ,30, 70, 80],
+  february: [100, 70, 80, 50, 120, 100, 130, 140, 90, 100, 40, 50, 60],
+  march: [80, 50, 60, 40, 60, 120, 100, 130, 60, 80, 50, 60, 70],
+  april: [70, 80, 100, 70, 90, 60, 80, 130, 40, 60, 50, 80, 90],
+  may: [90, 40, 80, 80, 100, 140, 100, 130, 90, 60, 70, 50, 60],
+  june: [80, 60, 80, 60, 40, 100, 120, 100, 30, 40, 30, 70, 80],
+  july: [20, 40, 20, 50, 70, 60, 110, 80, 90, 30, 50, 50, 60],
+  august: [60, 70, 30, 40, 80, 140, 80, 140, 120, 130, 100, 110, 120],
+  september: [90, 90, 40, 60, 40, 110, 90, 110, 60, 80, 60, 70, 80],
+  october: [50, 80, 50, 80, 50, 80, 120, 80, 50, 120, 110, 110, 120],
+  november: [60, 90, 60, 70, 40, 70, 100, 140, 30, 40, 30, 70, 180],
+  december: [20, 40, 20, 50, 30, 80, 120, 100, 30, 40, 30, 70, 80],
+
+};
+
+function showChart() {
+  console.log('Entrando en showChart');
+  const allCharts = document.querySelectorAll('.chart');
+      allCharts.forEach(chart => {
+        chart.style.display = 'none';
+      });
+
+  const selectedMonth = document.getElementById('months').value;
+  console.log('Mes seleccionado:', selectedMonth);
+
+  const selectedChart = document.getElementById(selectedMonth);
+  console.log('Canvas seleccionado:', selectedChart);
+  selectedChart.style.display = 'block';
+
+  const data = chartData[selectedMonth];
+  console.log('Datos del mes:', data);
+
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '90%',
+    plugins: {
+     legend: {
+      display: false,
+    },
+  }};
+  const ctx = selectedChart.getContext('2d');
+  selectedChart.width = selectedChart.width;
+
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['1', '5', '9', '13', '17', '21', '25'],
+      datasets: [{
+        data: data,
+        borderColor: 'rgba(49, 126, 230, 1)',
+        borderWidth: 2,
+        fill: false,
+      }],
+    },
+    options: options,
+  });
+  console.log('Gráfico creado:', myChart);
+}
+document.addEventListener('DOMContentLoaded', function() {
+  showChart();});
 
 /* Ajustes INICIO */
 const boton__ajustes = document.querySelector('.boton__ajustes');
@@ -218,3 +283,27 @@ lightmode.addEventListener("click", () => {
   
   
 /* Ajustes FIN */
+
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+      const customSelect = document.getElementById('customSelect');
+      const selectedOption = customSelect.querySelector('.selected-option');
+      const optionsContainer = customSelect.querySelector('.options');
+      const options = customSelect.querySelectorAll('.option');
+
+      // Event listener para mostrar/ocultar opciones al hacer clic en el div
+      selectedOption.addEventListener('click', function () {
+        optionsContainer.style.display = optionsContainer.style.display === 'none' ? 'block' : 'none';
+      });
+
+      // Event listener para manejar la selección de una opción
+      options.forEach(option => {
+        option.addEventListener('click', function () {
+          const selectedValue = this.getAttribute('data-value');
+          selectedOption.textContent = `Opción seleccionada: ${selectedValue}`;
+          optionsContainer.style.display = 'none';
+        })
+      })
+    });
+  

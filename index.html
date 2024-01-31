@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="estilos.css" />
     <link
       rel="stylesheet"
@@ -543,13 +544,10 @@
       <div class="cuadros">
         <div class="cuadro1">
           <div class="infoIzq">
-            <h5 style="vertical-align: inherit">
-              Weekly Sales <i class="fa-regular fa-circle-question"></i>
-            </h5>
-            <p style="vertical-align: inherit" class="line-height-1">$ 43K</p>
-            <span class="cuadroVerde"
-              ><p style="vertical-align: inherit">+3,5%</p></span
-            >
+            <h5 style="vertical-align: inherit;">Weekly Sales
+              <i class="fa-regular fa-circle-question"></i> </h5>
+            <p style="vertical-align: inherit;" class="line-height-1">$ 43K</p>
+            <span class="cuadroVerde"><p style="vertical-align: inherit;">+3,5%</p></span>
           </div>
           <div class="infoDer">
             <canvas id="miGrafico" class="miGrafico"></canvas>
@@ -557,11 +555,9 @@
         </div>
         <div class="cuadro2">
           <div class="infoIzq">
-            <h5 style="vertical-align: inherit">Total Orden</h5>
-            <p style="vertical-align: inherit" class="line-height-1">58.4K</p>
-            <span style="vertical-align: inherit" class="cuadroAzul">
-              <i class="fa-solid fa-caret-up"></i>13,6%</span
-            >
+            <h5 style="vertical-align: inherit;">Total Orden</h5>
+            <p style="vertical-align: inherit;" class="line-height-1">58.4K</p>
+            <span style="vertical-align: inherit;" class="cuadroAzul"><i class="fa-solid fa-caret-up"></i>13,6%</span></span>
           </div>
           <div class="infoDer">
             <div class="grafico2">
@@ -571,85 +567,180 @@
         </div>
         <div class="cuadro3">
           <div class="infoIzq">
-            <h5 style="vertical-align: inherit">Market Share</h5>
+            <h5 style="vertical-align: inherit;">Market Share</h5>
             <div class="marcas">
               <div class="samsung">
-                <span
-                  class="circuloS"
-                  style="background-color: rgb(44, 123, 229)"
-                ></span>
-                <span style="vertical-align: inherit">Samsung</span>
-                <span style="vertical-align: inherit" class="porcentaje"
-                  >58 %</span
-                >
+                <span class="circuloS" style="background-color: rgb(44, 123, 229);"></span>
+                <span style="vertical-align: inherit;">Samsung</span>
+                <span style="vertical-align: inherit;" class="porcentaje">58 %</span>
               </div>
-              <div class="huawei">
-                <span
-                  class="circuloH"
-                  style="background-color: rgb(39, 188, 253)"
-                ></span>
-                <span style="vertical-align: inherit" class="tituloMarcas"
-                  >Huawei</span
-                >
-                <span style="vertical-align: inherit" class="porcentaje"
-                  >21 %</span
-                >
-              </div>
-              <div class="apple">
-                <span
-                  class="circuloA"
-                  style="background-color: rgb(216, 226, 239)"
-                ></span>
-                <span style="vertical-align: inherit">Apple</span>
-                <span style="vertical-align: inherit" class="porcentaje"
-                  >22 %</span
-                >
-              </div>
+            <div class="huawei">
+              <span class="circuloH" style="background-color: rgb(39, 188, 253);"></span>
+              <span style="vertical-align: inherit;" class="tituloMarcas">Huawei</span>
+              <span style="vertical-align: inherit;" class="porcentaje">21 %</span>
+            </div>
+            <div class="apple">
+              <span class="circuloA" style="background-color: rgb(216, 226, 239);"></span>
+              <span style="vertical-align: inherit;">Apple</span>
+              <span style="vertical-align: inherit;" class="porcentaje">22 %</span>
+            </div>
             </div>
           </div>
           <div class="infoDer">
-            <canvas id="miGrafico3" class="miGrafico3"></canvas>
+            <canvas id="miGrafico3" class="miGrafico3"> </canvas>
             <div class="dentroGrafica">92M</div>
           </div>
-        </div>
+         </div>
         <div class="cuadro4">
           <div class="infoTiempoIzq">
-            <h5 style="vertical-align: inherit">Weather</h5>
+            <h5 style="vertical-align: inherit;">Weather </h5>
             <div class="tiempoIzq">
-              <img
-                class="mr-3"
-                src="data:image/png;base64,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"
-                alt=""
-                height="60"
-              />
+              <img class="mr-3" src="data:image/png;base64,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" alt="" height="60">
             </div>
             <div class="tiempoDer">
-              <h5 style="vertical-align: inherit">New York City</h5>
-              <p style="vertical-align: inherit" class="soleado">Sunny</p>
-              <p style="vertical-align: inherit" class="prec">
-                Precipitación:50%
-              </p>
+              <h5 style="vertical-align: inherit;">New York City</h5>
+              <p style="vertical-align: inherit;" class="soleado">Sunny</p>
+              <p style="vertical-align: inherit;" class="prec">Precipitación:50% </p>
             </div>
-          </div>
+          </div> 
           <div class="infoTiempoDer">
             <div class="dropdown">
               <div class="menu-container">
                 <button class="menu-btn">
-                  <i class="fa-solid fa-ellipsis"></i>
-                </button>
+                  <i class="fa-solid fa-ellipsis"></i></button>
                 <div class="dropdown-menu">
                   <a href="#">Vista</a>
                   <a href="#">Exportar</a>
-                  <hr />
+                  <hr>
                   <a href="#">Eliminar</a>
                 </div>
               </div>
             </div>
-            <p style="vertical-align: inherit" class="gradosG">31°</p>
-            <p style="vertical-align: inherit" class="gradosP">32°/25°</p>
+            <p style="vertical-align: inherit;" class="gradosG">31°</p>
+            <p style="vertical-align: inherit;" class="gradosP">32°/25° </p>
+          </div>     
+          </div>
+          <div class="cuadro5">
+            <div class="c5Titulo">
+              <h5 >Running Proyects</h5> 
+              <span class="select-option">
+                <select>
+                  <option value="opcion1">Working Time</option>
+                  <option value="opcion2">Estimated Time</option>
+                  <option value="opcion3">Billable Time</option>
+                </select>
+              </span>
+            </div>
+            <div class="c5Contenido">
+              <div class="c5Contenido1">
+                <div>
+                  <span class="circuloR"><span class="letra">R</span></span>
+                  <span class="c5Titulos"><a href="#">Raven Pro</a></span>
+                  <span style="vertical-align: inherit;" class="c5CuadroAzul">38%</span>
+                </div>
+                <div>
+                  <span class="circuloB"><span class="letra">B</span></span>
+                  <span class="c5Titulos"><a href="#">Boots4</a></span>
+                  <span style="vertical-align: inherit;" class="c5CuadroAzul">79%</span>
+                </div>
+                <div>
+                  <span class="circuloF"><span class="letra">F</span></span>
+                  <span class="c5Titulos"><a href="#">Falcon</a></span>
+                  <span style="vertical-align: inherit;" class="c5CuadroAzul">90%</span>
+                </div>
+                <div>
+                  <span class="circuloS2"><span class="letra">S</span></span>
+                  <span class="c5Titulos"><a href="#">Slick</a></span>
+                  <span style="vertical-align: inherit;" class="c5CuadroAzul">40%</span>
+                </div>
+                <div>
+                  <span class="circuloR2"><span class="letra">R</span></span>
+                  <span class="c5Titulos"><a href="#">Reign Pro</a></span>
+                  <span style="vertical-align: inherit;" class="c5CuadroAzul">78%</span>
+                </div>
+              </div>
+
+              <div class="c5Contenido2">
+              <div>
+                <span class="tiempoTrabajo">12:50:00</span>
+                <span class="barraTrabajo"><progress value="38" max="100"></progress></span>
+              </div>
+              <div>
+                <span class="tiempoTrabajo">25:20:00</span>
+                <span class="barraTrabajo"><progress value="79" max="100"></progress></span>
+              </div>
+              <div>
+                <span class="tiempoTrabajo">58:20:00</span>
+                <span class="barraTrabajo"><progress value="90" max="100"></progress></span>
+              </div>
+              <div>
+                <span class="tiempoTrabajo">21:20:00</span>
+                <span class="barraTrabajo"><progress value="40" max="100"></progress></span>
+              </div>
+              <div>
+                <span class="tiempoTrabajo">31:50:00</span>
+                <span class="barraTrabajo"><progress value="78" max="100"></progress></span>
+              </div>
+
+              </div>
+                
+            </div>
+             <div class="enlaceFinal">
+                <a href="#">Show all projects ></a>
+             </div>
+            </div>
+
+          
+          <div class="cuadro6">
+            <div class="c5Titulo">
+              <h5 >Total Sales</h5> 
+              <span class="select-option">
+                <select id="months" onchange="showChart()">
+                  <option value="january">January</option>
+                  <option value="february">February</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                  <option value="may">May</option>
+                  <option value="june">June</option>
+                  <option value="july">July</option>
+                  <option value="august">August</option>
+                  <option value="september">September</option>
+                  <option value="october">October</option>
+                  <option value="november">November</option>
+                  <option value="december">December</option>
+                </select>
+              </span>
+              <span>
+                <div class="dropdown">
+                  <div class="menu-container">
+                    <button class="menu-btn">
+                      <i class="fa-solid fa-ellipsis"></i></button>
+                    <div class="dropdown-menu">
+                      <a href="#">Vista</a>
+                      <a href="#">Exportar</a>
+                      <hr>
+                      <a href="#">Eliminar</a>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div class="c5Graficas">
+              <canvas id="january" class="chart"width="400" height="200"></canvas>
+              <canvas id="february" class="chart"width="400" height="200"></canvas>
+              <canvas id="march" class="chart"width="400" height="200"></canvas>
+              <canvas id="april" class="chart"width="400" height="200" ></canvas>
+              <canvas id="may" class="chart" width="400" height="200"></canvas>
+              <canvas id="june" class="chart"width="400" height="200"></canvas>
+              <canvas id="july" class="chart"width="400" height="200"></canvas>
+              <canvas id="august" class="chart"width="400" height="200"></canvas>
+              <canvas id="september" class="chart"width="400" height="200"></canvas>
+              <canvas id="october" class="chart"width="400" height="200"></canvas>
+              <canvas id="november" class="chart" width="400" height="200"></canvas>
+              <canvas id="december" class="chart"width="400" height="200"></canvas>
+            </div>
           </div>
         </div>
-      </div>
 
       <div class="parteMigue1">
       <div class="ContenedorPriM">
@@ -823,8 +914,12 @@
               </div>
               <div class="espaciador7M"></div>
               <div class="botonesrafa">
-                <button class="clasemisma">1</button>
-                <button class="clasemisma">2</button>
+                <button class="clasemisma"><span class="material-symbols-outlined">
+                  cloud_download
+                  </span></button>
+                <button class="clasemisma"><span class="material-symbols-outlined">
+                  border_color
+                  </span></button>
               </div>
             </div>
 
@@ -843,8 +938,12 @@
               </div>
               <div class="espaciador7M"></div>
               <div class="botonesrafa">
-                <button class="clasemisma">1</button>
-                <button class="clasemisma">2</button>
+                <button class="clasemisma"><span class="material-symbols-outlined">
+                  cloud_download
+                  </span</button>
+                <button class="clasemisma"><span class="material-symbols-outlined">
+                  border_color
+                  </span></button>
               </div>
             </div>
 
@@ -863,8 +962,12 @@
               </div>
               <div class="espaciador7M"></div>
               <div class="botonesrafa">
-                <button class="clasemisma">1</button>
-                <button class="clasemisma">2</button>
+                <button class="clasemisma"><span class="material-symbols-outlined">
+                  cloud_download
+                  </span</button>
+                <button class="clasemisma"><span class="material-symbols-outlined">
+                  border_color
+                  </span></button>
               </div>
             </div>
 
@@ -883,8 +986,12 @@
               </div>
               <div class="espaciador7M"></div>
               <div class="botonesrafa">
-                <button class="clasemisma">1</button>
-                <button class="clasemisma">2</button>
+                <button class="clasemisma"><span class="material-symbols-outlined">
+                  cloud_download
+                  </span</button>
+                <button class="clasemisma"><span class="material-symbols-outlined">
+                  border_color
+                  </span></button>
               </div>
             </div>
 
@@ -896,8 +1003,12 @@
           </div>
           <div class="espaciador7M"></div>
           <div class="botonesrafa">
-            <button class="clasemisma">1</button>
-            <button class="clasemisma">2</button>
+            <button class="clasemisma"><span class="material-symbols-outlined">
+              cloud_download
+              </span</button>
+            <button class="clasemisma"><span class="material-symbols-outlined">
+              border_color
+              </span></button>
           </div>
           </div>
 
@@ -912,13 +1023,22 @@
         <h5 class="ActiveUsersM">Active Users</h5>
         <div class="espaciador8M"></div>
         <div>
-          <select class="puntitosM" name="select" id="">
+          <!--<select class="puntitosM" name="select" id=""> 
             <option value="" hidden>...</option>
             <option value="">View</option>
-            <option value="">Export</option>
-          
-            <option class="RemoveRedM" value="">Remove</option>
-          </select>
+            <option value="">Export</option>-->
+
+            <div class="custom-select" id="customSelect">
+              <div class="selected-option"><span class="material-symbols-outlined">
+                more_horiz
+                </span></div>
+              <div class="options">
+                <div class="option" data-value="opcion1">View</div>
+                <div class="option" data-value="opcion2">Export</div>
+                <div class="option RemoveRedM" data-value="opcion3">Remove</div>
+              </div>
+            
+            </div>
         </div>
       </div>
       <div class="usuariosTarjetaM">
@@ -999,12 +1119,22 @@
         <div class="bandwidthM">bandwidth Saved</div>
         <div class="espaciador10M"></div>
         <div>
-          <select class="puntitos2M" name="" id="">
+          <!--<select class="puntitos2M" name="" id="">
             <option value="" hidden>...</option>
             <option value="">View</option>
             <option value="">Export</option>
             <option class="RemoveRedM" value="">Remove</option>
-          </select>
+          </select>-->
+          <div class="custom-select" id="customSelect">
+            <div class="selected-option"><span class="material-symbols-outlined">
+              more_horiz
+              </span></div>
+            <div class="options">
+              <div class="option" data-value="opcion1">View</div>
+              <div class="option" data-value="opcion2">Export</div>
+              <div class="option RemoveRedM" data-value="opcion3">Remove</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="contenidoHijo2M"> 
@@ -1014,7 +1144,9 @@
         <div class="circunferencia293M"></div>
       </div>
       <div class="GBsalvedM">
-        <h4 class="GBTextoM">35.75 GB saved</h4>
+        <h4 class="GBTextoM"> <div class="colorTickM"><span class="material-symbols-outlined">
+          done
+          </span></div>  35.75 GB saved</h4>
         <p class="GBTextoM2"> 38.44 GB total bandwidth</p>
       </div>
       <div class="cabeceraUltima2M">
