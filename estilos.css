@@ -47,7 +47,7 @@ body{
                           "sidebar contenido";
   background-color: var(--fondo);
   width: 80%;
-  overflow: scroll;
+  overflow-y: scroll;
   
   
 }
@@ -138,7 +138,7 @@ body{
 }
 .ripple{
   position: absolute;
-  border: 5px solid rgba(0,210,122,.3);
+  border: 5px solid rgba(12, 229, 139, 0.485);
   animation: ripple 2s infinite;
   border-radius: 50%;
   top: 12px;
